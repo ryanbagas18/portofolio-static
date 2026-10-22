@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="id" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Developer</title>
+
+    <!-- Bootstrap 5.3 CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <style>
+      .hero-section {
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+      }
+
+      .project-card {
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-secondary"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="#"
+          >&lt;Ryan Bagas P. /&gt;</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="d-flex align-items-center min-vh-100 bg-white">
+        <div class="container py-5">
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-md-7 mb-4 mb-lg-0">
+              <h1 class="display-4 fw-bold mb-3 text-dark">
+                Hello, I'm Ryan Bagas Pratama
+              </h1>
+              <h3 class="text-primary mb-4">
+                Web & Full-Stack Developer | Informatics Engineering
+              </h3>
+              <p class="lead text-secondary mb-4" style="line-height: 1.7">
+                Lulusan S1 Sistem Informasi Universitas Surabaya dengan fokus
+                pada pengembangan web, analisis sistem, dan perancangan proses
+                bisnis. Memiliki pengalaman membangun aplikasi web dengan
+                Laravel & MySQL, serta merancang UI/UX menggunakan Figma.
+                Berkelanjutan mengasah kemampuan kepemimpinan dan manajemen tim
+                melalui pengalaman sebagai Trainer UBAYA Choir dan Panitia FESPA
+                UBAYA.
+              </p>
+
+              <div class="d-flex flex-wrap gap-3 mt-4">
+                <a
+                  href="assets/resume.pdf"
+                  download="CV_Ryan_Bagas_Pratama.pdf"
+                  class="btn btn-primary btn-lg px-4 py-2"
+                >
+                  <i class="bi bi-download me-2"></i>Download CV
+                </a>
+                <a
+                  href="about.html"
+                  class="btn btn-outline-secondary btn-lg px-4 py-2"
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-5 text-center">
+              <img
+                src="assets/images/profile.webp"
+                alt="Ryan Bagas Pratama"
+                class="img-fluid rounded-circle shadow-lg border border-4 border-white"
+                style="width: 380px; height: 380px; object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="bg-white">
+        <div class="container py-5">
+          <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark mb-2">Experience</h2>
+            <div
+              class="bg-primary mx-auto rounded"
+              style="width: 60px; height: 2px"
+            ></div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="timeline">
+                <div class="card border-0 shadow-sm mb-4">
+                  <div class="card-body p-4">
+                    <div
+                      class="d-flex justify-content-between align-items-start flex-wrap mb-2"
+                    >
+                      <div>
+                        <h5 class="fw-bold mb-1">Trainer / Divisi Pelatihan</h5>
+                        <h6 class="text-primary mb-0">UBAYA Choir</h6>
+                      </div>
+                      <span class="badge bg-light text-dark border">
+                        Aug 2022 - Aug 2024
+                      </span>
+                    </div>
+                    <p class="text-muted small mb-2">
+                      <i class="bi bi-geo-alt me-1"></i>Surabaya, Jawa Timur,
+                      Indonesia
+                    </p>
+                    <p class="card-text text-secondary mb-0">
+                      Merancang dan mengeksekusi program pelatihan paduan suara
+                      secara menyeluruh, mulai dari pembinaan anggota baru
+                      (trainee) hingga persiapan tim untuk kompetisi tingkat
+                      nasional dan internasional. Memastikan setiap anggota
+                      menguasai pembacaan partitur not balok secara presisi,
+                      ketepatan notasi, artikulasi/diksi lirik, serta penjiwaan
+                      makna dan dinamika lagu. Berhasil mengantar tim meraih
+                      Gold Medal di Pesparawi Mahasiswa Nasional (Semarang 2022
+                      & Kupang 2024), serta Jury Prize, Grand Finalist, dan 2
+                      Gold Medal pada 10th AVOS International Choral Competition
+                      2023 (Bangkok, Thailand).
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card border-0 shadow-sm mb-4">
+                  <div class="card-body p-4">
+                    <div
+                      class="d-flex justify-content-between align-items-start flex-wrap mb-2"
+                    >
+                      <div>
+                        <h5 class="fw-bold mb-1">Steering Committee</h5>
+                        <h6 class="text-primary mb-0">9th FESPA UBAYA</h6>
+                      </div>
+                      <span class="badge bg-light text-dark border">
+                        Oct 2023 - Jun 2024
+                      </span>
+                    </div>
+                    <p class="text-muted small mb-2">
+                      <i class="bi bi-geo-alt me-1"></i>Surabaya, Jawa Timur,
+                      Indonesia
+                    </p>
+                    <p class="card-text text-secondary mb-0">
+                      Mengawasi alur kerja antar-divisi dan mengarahkan eksekusi
+                      acara kompetisi paduan suara nasional. Bertanggung jawab
+                      atas operational troubleshooting dan risk management
+                      lintas divisi demi kelancaran keseluruhan kompetisi.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card border-0 shadow-sm mb-4">
+                  <div class="card-body p-4">
+                    <div
+                      class="d-flex justify-content-between align-items-start flex-wrap mb-2"
+                    >
+                      <div>
+                        <h5 class="fw-bold mb-1">
+                          Koordinator Divisi Logistik
+                        </h5>
+                        <h6 class="text-primary mb-0">8th FESPA UBAYA</h6>
+                      </div>
+                      <span class="badge bg-light text-dark border">
+                        Nov 2022 - Jul 2023
+                      </span>
+                    </div>
+                    <p class="text-muted small mb-2">
+                      <i class="bi bi-geo-alt me-1"></i>Surabaya, Jawa Timur,
+                      Indonesia
+                    </p>
+                    <p class="card-text text-secondary mb-0">
+                      Memimpin operasional logistik kompetisi paduan suara
+                      nasional, meliputi manajemen vendor, pengadaan
+                      sarana-prasarana, dan mitigasi risiko kendala teknis
+                      venue.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="bg-light">
+        <div class="container py-5">
+          <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark mb-2">Projects</h2>
+            <div
+              class="bg-primary mx-auto rounded"
+              style="width: 60px; height: 2px"
+            ></div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card border-0 shadow-sm h-100 project-card">
+                <div class="ratio ratio-16x9">
+                  <img
+                    src="assets/images/ubaya-choir-thumbnail.webp"
+                    class="img-fluid rounded w-100"
+                    alt="Choir Management & Audition System"
+                    style="
+                      object-fit: cover;
+                      image-rendering: -webkit-optimize-contrast;
+                      image-rendering: crisp-edges;
+                    "
+                  />
+                </div>
+                <div class="card-body d-flex flex-column p-4">
+                  <h5 class="card-title fw-bold mb-1">
+                    Choir Management & Audition System
+                  </h5>
+                  <p class="text-muted small mb-2">
+                    UBAYA Choir (Universitas Surabaya) | Full-Stack Developer
+                    (Undergraduate Thesis)
+                  </p>
+                  <p class="card-text text-secondary mb-3 flex-grow-1">
+                    Developed an integrated management information system for
+                    UBAYA Choir to streamline recruitment, audition scoring, and
+                    training workflows using Laravel MVC, MySQL, and SAW
+                    Algorithm.
+                  </p>
+
+                  <div class="mb-3 d-flex flex-wrap gap-1">
+                    <span
+                      class="badge bg-primary-subtle text-primary border"
+                      style="font-size: 0.75rem"
+                      >Laravel 10</span
+                    >
+                    <span
+                      class="badge bg-primary-subtle text-primary border"
+                      style="font-size: 0.75rem"
+                      >MySQL</span
+                    >
+                    <span
+                      class="badge bg-primary-subtle text-primary border"
+                      style="font-size: 0.75rem"
+                      >Bootstrap</span
+                    >
+                  </div>
+
+                  <a
+                    href="project-detail.html?id=ubaya-choir"
+                    class="btn btn-outline-primary btn-sm mt-auto w-100"
+                  >
+                    Project Detail<i class="bi bi-arrow-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="bg-light">
+        <div class="container py-5">
+          <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark mb-2">Education</h2>
+            <div
+              class="bg-primary mx-auto rounded"
+              style="width: 60px; height: 2px"
+            ></div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body p-4">
+                  <div
+                    class="d-flex justify-content-between align-items-start flex-wrap mb-2"
+                  >
+                    <div>
+                      <h5 class="fw-bold mb-1">Universitas Surabaya (UBAYA)</h5>
+                      <h6 class="text-primary mb-0">
+                        S1 - Sarjana Komputer (S.Kom) - Teknik Informatika -
+                        Sistem Informasi Bisnis
+                      </h6>
+                    </div>
+                    <span class="badge bg-white text-dark border">
+                      2021 - 2026
+                    </span>
+                  </div>
+                  <p class="card-text text-secondary mt-2 mb-0">
+                    IPK: 3.38 / 4.00. Penerima Beasiswa Mahasiswa Berprestasi.
+                    Aktif sebagai Trainer UBAYA Choir dan Panitia FESPA UBAYA.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body p-4">
+                  <div
+                    class="d-flex justify-content-between align-items-start flex-wrap mb-2"
+                  >
+                    <div>
+                      <h5 class="fw-bold mb-1">SMAN 15 Surabaya</h5>
+                      <h6 class="text-primary mb-0">
+                        SMA - MIPA (Matematika dan Ilmu Pengetahuan Alam)
+                      </h6>
+                    </div>
+                    <span class="badge bg-white text-dark border">
+                      2018 - 2021
+                    </span>
+                  </div>
+                  <p class="card-text text-secondary mt-2 mb-0">
+                    Aktif dalam kegiatan ekstrakurikuler Libels Voice dan
+                    Persekutuan Doa Kristen.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="bg-white">
+        <div class="container py-5">
+          <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark mb-2">Skills & Tools</h2>
+            <div
+              class="bg-primary mx-auto rounded"
+              style="width: 60px; height: 2px"
+            ></div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card border-0 shadow-sm h-100 p-3">
+                <div class="card-body">
+                  <h5 class="fw-bold mb-3 text-primary">Backend</h5>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-light text-dark border p-2"
+                      >Laravel 10</span
+                    >
+                    <span class="badge bg-light text-dark border p-2">PHP</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card border-0 shadow-sm h-100 p-3">
+                <div class="card-body">
+                  <h5 class="fw-bold mb-3 text-primary">Database</h5>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-light text-dark border p-2"
+                      >MySQL</span
+                    >
+                    <span class="badge bg-light text-dark border p-2">SQL</span>
+                    <span class="badge bg-light text-dark border p-2"
+                      >Database Design</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card border-0 shadow-sm h-100 p-3">
+                <div class="card-body">
+                  <h5 class="fw-bold mb-3 text-primary">Frontend</h5>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-light text-dark border p-2"
+                      >HTML5</span
+                    >
+                    <span class="badge bg-light text-dark border p-2">CSS</span>
+                    <span class="badge bg-light text-dark border p-2"
+                      >Bootstrap 4</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card border-0 shadow-sm h-100 p-3">
+                <div class="card-body">
+                  <h5 class="fw-bold mb-3 text-primary">Tools & Design</h5>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-light text-dark border p-2"
+                      >UI/UX Design</span
+                    >
+                    <span class="badge bg-light text-dark border p-2"
+                      >Figma</span
+                    >
+                    <span class="badge bg-light text-dark border p-2">Git</span>
+                    <span class="badge bg-light text-dark border p-2"
+                      >VS Code</span
+                    >
+                    <span class="badge bg-light text-dark border p-2"
+                      >Microsoft Excel</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card border-0 shadow-sm h-100 p-3">
+                <div class="card-body">
+                  <h5 class="fw-bold mb-3 text-primary">Methodology</h5>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-light text-dark border p-2"
+                      >System Analyst</span
+                    >
+                    <span class="badge bg-light text-dark border p-2"
+                      >System Flowchart</span
+                    >
+                    <span class="badge bg-light text-dark border p-2"
+                      >Business Process Mapping</span
+                    >
+                    <span class="badge bg-light text-dark border p-2"
+                      >SAW Algorithm</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card border-0 shadow-sm h-100 p-3">
+                <div class="card-body">
+                  <h5 class="fw-bold mb-3 text-primary">Soft Skills</h5>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-light text-dark border p-2"
+                      >Problem Solving</span
+                    >
+                    <span class="badge bg-light text-dark border p-2"
+                      >Analytical Thinking</span
+                    >
+                    <span class="badge bg-light text-dark border p-2"
+                      >Teamwork</span
+                    >
+                    <span class="badge bg-light text-dark border p-2"
+                      >Adaptability</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Achievements Section -->
+      <section id="achievements" class="bg-white">
+        <div class="container py-5">
+          <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark mb-2">Achievements</h2>
+            <div
+              class="bg-primary mx-auto rounded"
+              style="width: 60px; height: 2px"
+            ></div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card border-0 shadow-sm h-100 p-3">
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <div
+                      class="bg-warning text-dark rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                      style="width: 50px; height: 50px; font-size: 1.5rem"
+                    >
+                      <i class="bi bi-trophy-fill"></i>
+                    </div>
+                    <div>
+                      <h6 class="fw-bold mb-0">
+                        Gold Medal - PESPARAWI Mahasiswa Nasional XVIII 2024
+                      </h6>
+                      <small class="text-muted"
+                        >PESPARAWI Mahasiswa Nasional (Kupang, NTT)</small
+                      >
+                    </div>
+                  </div>
+
+                  <p class="card-text text-secondary small mb-3 flex-grow-1">
+                    Berperan sebagai Pelatih (Trainer) UBAYA Choir dan Penyanyi
+                    (Bass). Meraih Gold Medal (Top 7) dan penghargaan khusus
+                    Best Interpretation for Traditional Gospel.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card border-0 shadow-sm h-100 p-3">
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <div
+                      class="bg-warning text-dark rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                      style="width: 50px; height: 50px; font-size: 1.5rem"
+                    >
+                      <i class="bi bi-trophy-fill"></i>
+                    </div>
+                    <div>
+                      <h6 class="fw-bold mb-0">
+                        Gold Medal - PESPARAWI Mahasiswa Nasional XVII 2022
+                      </h6>
+                      <small class="text-muted"
+                        >PESPARAWI Mahasiswa Nasional (Semarang, Jawa
+                        Tengah)</small
+                      >
+                    </div>
+                  </div>
+
+                  <p class="card-text text-secondary small mb-3 flex-grow-1">
+                    Berperan sebagai Pelatih (Trainer) UBAYA Choir dan Penyanyi
+                    (Bass). Meraih Gold Medal dengan skor 81.50.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card border-0 shadow-sm h-100 p-3">
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <div
+                      class="bg-warning text-dark rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                      style="width: 50px; height: 50px; font-size: 1.5rem"
+                    >
+                      <i class="bi bi-trophy-fill"></i>
+                    </div>
+                    <div>
+                      <h6 class="fw-bold mb-0">
+                        Grand Finalist & 2 Gold Medals - 10th AVOS International
+                        Choral Competition
+                      </h6>
+                      <small class="text-muted">AVOS (Bangkok, Thailand)</small>
+                    </div>
+                  </div>
+
+                  <p class="card-text text-secondary small mb-3 flex-grow-1">
+                    Berperan sebagai Pelatih (Trainer) vokal sekaligus Penyanyi
+                    (Bass) tim UBAYA Choir dalam kompetisi internasional yang
+                    diikuti 6 negara. Mengawal persiapan teknis hingga tim
+                    meraih Jury Prize pada babak Grand Prix, menjadi Grand
+                    Finalist, serta memperoleh 2 Gold Medal (A1 Mixed Choir &
+                    Sacred Music).
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card border-0 shadow-sm h-100 p-3">
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <div
+                      class="bg-warning text-dark rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                      style="width: 50px; height: 50px; font-size: 1.5rem"
+                    >
+                      <i class="bi bi-trophy-fill"></i>
+                    </div>
+                    <div>
+                      <h6 class="fw-bold mb-0">
+                        Juara 3 Vokal Grup - PEKSIMIDA Jawa Timur 2024
+                      </h6>
+                      <small class="text-muted">PEKSIMIDA Jawa Timur</small>
+                    </div>
+                  </div>
+
+                  <p class="card-text text-secondary small mb-3 flex-grow-1">
+                    Berperan sebagai Pelatih (Trainer) yang mengawal persiapan
+                    teknis tim vokal grup hingga meraih Juara 3.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card border-0 shadow-sm h-100 p-3">
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <div
+                      class="bg-warning text-dark rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                      style="width: 50px; height: 50px; font-size: 1.5rem"
+                    >
+                      <i class="bi bi-trophy-fill"></i>
+                    </div>
+                    <div>
+                      <h6 class="fw-bold mb-0">
+                        Juara 3 Vokal Grup - PEKSIMIDA Jawa Timur 2022
+                      </h6>
+                      <small class="text-muted">PEKSIMIDA Jawa Timur</small>
+                    </div>
+                  </div>
+
+                  <p class="card-text text-secondary small mb-3 flex-grow-1">
+                    Berperan sebagai Pelatih (Trainer) yang mengawal persiapan
+                    teknis tim vokal grup hingga meraih Juara 3.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card border-0 shadow-sm h-100 p-3">
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <div
+                      class="bg-warning text-dark rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                      style="width: 50px; height: 50px; font-size: 1.5rem"
+                    >
+                      <i class="bi bi-trophy-fill"></i>
+                    </div>
+                    <div>
+                      <h6 class="fw-bold mb-0">
+                        Delegasi Solo Vokal Seriosa Putra - PEKSIMIDA Jawa Timur
+                        2022
+                      </h6>
+                      <small class="text-muted">PEKSIMIDA Jawa Timur</small>
+                    </div>
+                  </div>
+
+                  <p class="card-text text-secondary small mb-3 flex-grow-1">
+                    Terpilih sebagai delegasi resmi Universitas Surabaya untuk
+                    tangkai lomba Solo Vokal Seriosa Putra, tampil sebagai solo
+                    vokalis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications Section -->
+      <section id="certifications" class="bg-light">
+        <div class="container py-5">
+          <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark mb-2">Certifications</h2>
+            <div
+              class="bg-primary mx-auto rounded"
+              style="width: 60px; height: 2px"
+            ></div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card border-0 shadow-sm h-100 p-3">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="fw-bold mb-1">Memulai Pemrograman dengan C</h5>
+                  <p class="text-primary small mb-2">Dicoding Indonesia</p>
+                  <p class="text-muted small mb-3">Terbit: Sep 2026</p>
+                  <a
+                    href="https://www.dicoding.com/certificates/81P2K831QXOY"
+                    target="_blank"
+                    class="btn btn-sm btn-outline-primary mt-auto"
+                  >
+                    <i class="bi bi-box-arrow-up-right me-1"></i>Lihat
+                    Kredensial
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card border-0 shadow-sm h-100 p-3">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="fw-bold mb-1">SQL (Intermediate)</h5>
+                  <p class="text-primary small mb-2">Sololearn</p>
+                  <p class="text-muted small mb-3">Terbit: Sep 2026</p>
+                  <a
+                    href="https://www.sololearn.com/certificates/CC-AMDBE2B5"
+                    target="_blank"
+                    class="btn btn-sm btn-outline-primary mt-auto"
+                  >
+                    <i class="bi bi-box-arrow-up-right me-1"></i>Lihat
+                    Kredensial
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card border-0 shadow-sm h-100 p-3">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="fw-bold mb-1">Belajar Dasar Manajemen Proyek</h5>
+                  <p class="text-primary small mb-2">Dicoding Indonesia</p>
+                  <p class="text-muted small mb-3">Terbit: Sep 2026</p>
+                  <a
+                    href="https://www.dicoding.com/certificates/4EXGJ990EXRL"
+                    target="_blank"
+                    class="btn btn-sm btn-outline-primary mt-auto"
+                  >
+                    <i class="bi bi-box-arrow-up-right me-1"></i>Lihat
+                    Kredensial
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Ringkas & Ramping -->
+    <footer
+      id="contact"
+      class="py-4 bg-dark border-top border-secondary text-white"
+    >
+      <div class="container">
+        <div class="row g-3 justify-content-between align-items-center">
+          <!-- Kolom 1: Connect -->
+          <div class="col-md-7 text-center text-md-start">
+            <h6
+              class="fw-bold text-uppercase tracking-wider text-primary mb-2 small"
+            >
+              Connect
+            </h6>
+            <ul
+              class="list-unstyled d-flex flex-wrap justify-content-center justify-content-md-start gap-3 mb-0"
+            >
+              <li>
+                <a
+                  href="https://linkedin.com/in/ryan-bagas-pratama"
+                  target="_blank"
+                  class="text-white-50 text-decoration-none hover-white d-inline-flex align-items-center small"
+                >
+                  <i class="bi bi-linkedin me-1"></i>
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/ryanbagas18"
+                  target="_blank"
+                  class="text-white-50 text-decoration-none hover-white d-inline-flex align-items-center small"
+                >
+                  <i class="bi bi-github me-1"></i>
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=ryanbagaspratama18@gmail.com"
+                  target="_blank"
+                  class="text-white-50 text-decoration-none hover-white d-inline-flex align-items-center small"
+                >
+                  <i class="bi bi-envelope-fill me-1"></i>
+                  Email
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kolom 2: Explore -->
+          <div class="col-md-4 text-center text-md-end">
+            <h6
+              class="fw-bold text-uppercase tracking-wider text-primary mb-2 small"
+            >
+              Explore
+            </h6>
+            <ul class="list-unstyled d-flex flex-column gap-1 mb-0">
+              <li>
+                <a
+                  href="#hero"
+                  class="text-white-50 text-decoration-none hover-white small"
+                >
+                  Back to Top <i class="bi bi-arrow-up-short"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div
+          class="border-top border-secondary mt-3 pt-3 text-center text-white-50 small"
+          style="font-size: 0.8rem"
+        >
+          &copy; 2026 Ryan Bagas Pratama. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="id" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Portofolio Developer</title>
+
+    <!-- Bootstrap 5.3 CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <style>
+      .hero-section {
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+      }
+
+      .project-card {
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .style-paragraph {
+        line-height: 1.8;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-secondary"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="index.html"
+          >&lt;Ryan Bagas P. /&gt;</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <!-- About Me Section -->
+      <div class="bg-white py-5 min-vh-100 d-flex align-items-center">
+        <div class="container py-4">
+          <div class="row justify-content-center">
+            <!-- Kotak Konten Utama di Tengah (Centered Card) -->
+            <div class="col-lg-9 col-xl-8">
+              <div
+                class="card border border-light-subtle shadow-sm p-4 p-md-5 rounded-4 bg-white"
+              >
+                <!-- Judul & Underline Aksen Tipis -->
+                <div class="text-center mb-4">
+                  <h1 class="fw-bold text-dark mb-2">About Me</h1>
+                  <div
+                    class="bg-primary mx-auto rounded"
+                    style="width: 50px; height: 2px"
+                  ></div>
+                </div>
+
+                <!-- Deskripsi / Narasi Utama -->
+                <div class="text-secondary mb-4 style-paragraph">
+                  <p class="mb-3">
+                    I hold a Bachelor's degree in Information Systems from
+                    Universitas Surabaya (UBAYA), where I developed a strong
+                    foundation in full-stack web development, system analysis,
+                    and business process design.
+                  </p>
+                  <p class="mb-3">
+                    My technical work revolves around building scalable web
+                    applications using Laravel, managing MySQL databases, and
+                    prototyping user interfaces in Figma. Beyond writing code,
+                    I actively hone my leadership, team management, and
+                    communication skills through my roles as a Vocal Trainer for
+                    the UBAYA Choir and an event committee member for FESPA
+                    UBAYA.
+                  </p>
+                  <p class="mb-0">
+                    I am driven by the process of taking complex problems and
+                    translating them into simple, elegant digital solutions.
+                  </p>
+                </div>
+
+                <!-- Inner Card / Kotak Informasi Kontak & Edukasi -->
+                <div class="bg-light p-3 p-md-4 rounded-3 border mb-4">
+                  <h6
+                    class="fw-bold text-dark mb-3 text-uppercase tracking-wider small"
+                  >
+                    Quick Info
+                  </h6>
+                  <div class="row g-3">
+                    <div class="col-sm-6 text-dark small">
+                      <i class="bi bi-envelope-fill text-primary me-2"></i>
+                      <strong>Email:</strong>
+                      ryanbagaspratama18@gmail.com
+                    </div>
+                    <div class="col-sm-6 text-dark small">
+                      <i class="bi bi-mortarboard-fill text-primary me-2"></i>
+                      <strong>Education:</strong> S1 Sistem Informasi, UBAYA
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tombol Aksi di Tengah -->
+                <div class="d-flex justify-content-center gap-3 pt-2">
+                  <a
+                    href="assets/resume.pdf"
+                    class="btn btn-primary px-4 py-2"
+                    download="CV_Ryan_Bagas_Pratama.pdf"
+                  >
+                    <i class="bi bi-download me-2"></i>Download CV
+                  </a>
+                  <a href="index.html" class="btn btn-outline-secondary px-4 py-2">
+                    <i class="bi bi-arrow-left me-2"></i>Back to Home
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      id="contact"
+      class="py-4 bg-dark border-top border-secondary text-white"
+    >
+      <div class="container">
+        <div class="row g-3 justify-content-between align-items-center">
+          <!-- Kolom 1: Connect -->
+          <div class="col-md-7 text-center text-md-start">
+            <h6
+              class="fw-bold text-uppercase tracking-wider text-primary mb-2 small"
+            >
+              Connect
+            </h6>
+            <ul
+              class="list-unstyled d-flex flex-wrap justify-content-center justify-content-md-start gap-3 mb-0"
+            >
+              <li>
+                <a
+                  href="https://linkedin.com/in/ryan-bagas-pratama"
+                  target="_blank"
+                  class="text-white-50 text-decoration-none hover-white d-inline-flex align-items-center small"
+                >
+                  <i class="bi bi-linkedin me-1"></i>
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/ryanbagas18"
+                  target="_blank"
+                  class="text-white-50 text-decoration-none hover-white d-inline-flex align-items-center small"
+                >
+                  <i class="bi bi-github me-1"></i>
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=ryanbagaspratama18@gmail.com"
+                  target="_blank"
+                  class="text-white-50 text-decoration-none hover-white d-inline-flex align-items-center small"
+                >
+                  <i class="bi bi-envelope-fill me-1"></i>
+                  Email
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kolom 2: Explore -->
+          <div class="col-md-4 text-center text-md-end">
+            <h6
+              class="fw-bold text-uppercase tracking-wider text-primary mb-2 small"
+            >
+              Explore
+            </h6>
+            <ul class="list-unstyled d-flex flex-column gap-1 mb-0">
+              <li>
+                <a
+                  href="index.html#hero"
+                  class="text-white-50 text-decoration-none hover-white small"
+                >
+                  Back to Top <i class="bi bi-arrow-up-short"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright Line -->
+        <div
+          class="border-top border-secondary mt-3 pt-3 text-center text-white-50 small"
+          style="font-size: 0.8rem"
+        >
+          &copy; 2026 Ryan Bagas Pratama. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
