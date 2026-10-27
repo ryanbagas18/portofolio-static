@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="id" data-bs-theme="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Detail - Portofolio Developer</title>
+    <title>Project Detail - Developer Portfolio</title>
 
     <!-- Bootstrap 5.3 CSS CDN -->
     <link
@@ -17,37 +17,47 @@
     />
 
     <style>
-      .hero-section {
-        min-height: 80vh;
-        display: flex;
-        align-items: center;
+      :root {
+        --bs-primary: #0d6efd;
       }
 
-      .project-card {
-        transition:
-          transform 0.2s ease,
-          box-shadow 0.2s ease;
+      body {
+        background-color: #f8f9fa;
+        color: #212529;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
       }
 
-      .project-card:hover {
-        transform: translateY(-5px);
+      /* Navbar - Identical to index.html */
+      .navbar {
+        background-color: #212529 !important;
       }
 
-      .screenshot-img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        margin-bottom: 1rem;
+      .navbar-brand {
+        font-weight: 700;
+        color: var(--bs-primary) !important;
       }
 
-      /* Carousel Styles */
+      .nav-link {
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.75) !important;
+      }
+
+      .nav-link:hover,
+      .nav-link.active {
+        color: #ffffff !important;
+      }
+
+      /* Screenshot Carousel with Scrollable Image Wrapper */
       .screenshot-carousel {
         position: relative;
         width: 100%;
         aspect-ratio: 16 / 9;
         overflow: hidden;
-        border-radius: 8px;
-        background: #000;
+        border-radius: 12px;
+        background: #111;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        border: 1px solid #dee2e6;
       }
 
       .carousel-track {
@@ -80,7 +90,7 @@
         overflow-x: hidden;
         display: block;
         scrollbar-width: thin;
-        scrollbar-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.1);
+        scrollbar-color: rgba(255, 255, 255, 0.4) rgba(255, 255, 255, 0.1);
       }
 
       .carousel-image-wrapper img {
@@ -89,58 +99,47 @@
         display: block;
       }
 
-      /* Custom scrollbar for the image wrapper */
       .carousel-image-wrapper::-webkit-scrollbar {
         width: 6px;
       }
 
       .carousel-image-wrapper::-webkit-scrollbar-track {
         background: rgba(255, 255, 255, 0.1);
-        border-radius: 3px;
       }
 
       .carousel-image-wrapper::-webkit-scrollbar-thumb {
-        background: rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.4);
         border-radius: 3px;
-      }
-
-      .carousel-image-wrapper::-webkit-scrollbar-thumb:hover {
-        background: rgba(255, 255, 255, 0.5);
       }
 
       .carousel-nav {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.6);
         color: white;
         border: none;
-        width: 40px;
-        height: 40px;
+        width: 44px;
+        height: 44px;
         border-radius: 50%;
         cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: background 0.3s ease;
+        transition: background 0.2s ease;
         z-index: 10;
       }
 
       .carousel-nav:hover {
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.9);
       }
 
       .carousel-nav.prev {
-        left: 10px;
+        left: 15px;
       }
 
       .carousel-nav.next {
-        right: 10px;
-      }
-
-      .carousel-nav:disabled {
-        opacity: 0.3;
-        cursor: not-allowed;
+        right: 15px;
       }
 
       .carousel-title-overlay {
@@ -148,26 +147,15 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
         color: white;
-        padding: 20px 15px 15px;
-        opacity: 0;
-        transition: opacity 0.3s ease;
+        padding: 24px 20px 16px;
         z-index: 5;
       }
 
-      .screenshot-carousel:hover .carousel-title-overlay {
-        opacity: 1;
-      }
-
-      .carousel-title-overlay h6 {
-        margin: 0;
-        font-weight: 500;
-      }
-
-      .carousel-indicators {
+      .carousel-indicators-custom {
         position: absolute;
-        bottom: 10px;
+        bottom: 15px;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
@@ -175,27 +163,44 @@
         z-index: 10;
       }
 
-      .carousel-indicator {
-        width: 8px;
-        height: 8px;
+      .carousel-dot {
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
-        background: rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.4);
+        border: none;
         cursor: pointer;
-        transition: background 0.3s ease;
+        transition: background 0.2s ease;
       }
 
-      .carousel-indicator.active {
-        background: white;
+      .carousel-dot.active {
+        background: #ffffff;
+        transform: scale(1.15);
       }
 
-      .carousel-indicator:hover {
-        background: rgba(255, 255, 255, 0.8);
+      /* Card styles */
+      .custom-card {
+        background: #ffffff;
+        border: 1px solid #dee2e6;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+      }
+
+      /* Footer - Identical to index.html */
+      footer {
+        background-color: #212529 !important;
+        color: #fff;
+        padding: 2.5rem 0 1.5rem;
+        margin-top: 4rem;
+      }
+
+      .hover-white:hover {
+        color: #ffffff !important;
       }
     </style>
   </head>
-
   <body>
-    <!-- Navbar -->
+    <!-- Navbar - Identical to index.html -->
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-secondary"
     >
@@ -212,70 +217,72 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto align-items-center">
             <li class="nav-item">
-              <a class="nav-link" href="index.html#hero">Home</a>
+              <a class="nav-link" href="index.html#hero" data-i18n="nav-home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#projects">Projects</a>
+              <a class="nav-link" href="index.html#projects" data-i18n="nav-projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#skills">Skills</a>
+              <a class="nav-link" href="index.html#skills" data-i18n="nav-skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#contact">Contact</a>
+              <a class="nav-link" href="index.html#contact" data-i18n="nav-contact">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <div class="btn-group btn-group-sm" role="group" aria-label="Language Switcher">
+                <button type="button" class="btn btn-outline-primary lang-switcher d-flex align-items-center gap-2" data-lang="id">
+                  <img src="https://flagcdn.com/w20/id.png" srcset="https://flagcdn.com/w40/id.png 2x" width="20" alt="Indonesia" style="pointer-events: none;"> ID
+                </button>
+                <button type="button" class="btn btn-outline-primary lang-switcher d-flex align-items-center gap-2" data-lang="en">
+                  <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x" width="20" alt="English" style="pointer-events: none;"> EN
+                </button>
+              </div>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Main Content -->
-    <main>
-      <!-- Project Detail Section -->
-      <section class="bg-light py-5">
-        <div class="container py-5">
-          <div class="mb-4">
-            <a
-              href="index.html#projects"
-              class="btn btn-outline-secondary btn-sm"
-            >
-              <i class="bi bi-arrow-left me-1"></i>Back to Projects
-            </a>
-          </div>
+    <!-- Main Content Container -->
+    <main class="container py-5">
+      <!-- Back Button & Header -->
+      <div class="mb-4">
+        <a href="index.html#projects" class="btn btn-outline-secondary btn-sm mb-3">
+          <i class="bi bi-arrow-left me-2"></i><span data-i18n="btn-back-projects">Back to Projects</span>
+        </a>
+      </div>
 
-          <div id="project-content">
-            <!-- Content will be dynamically loaded here -->
-            <div class="text-center py-5">
-              <div class="spinner-border text-primary" role="status">
-                <span class="visually-hidden">Loading...</span>
-              </div>
-            </div>
+      <div id="project-detail-container">
+        <!-- Dynamic content will be injected here by JavaScript -->
+        <div class="text-center py-5">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
           </div>
+          <p class="text-muted mt-3" data-i18n="loading-project">Loading project details...</p>
         </div>
-      </section>
+      </div>
     </main>
 
-    <!-- Footer -->
-    <footer
-      id="contact"
-      class="py-4 bg-dark border-top border-secondary text-white"
-    >
+    <!-- Footer - Identical to index.html -->
+    <footer class="bg-dark text-white py-4 border-top border-secondary">
       <div class="container">
-        <div class="row g-3 justify-content-between align-items-center">
-          <!-- Kolom 1: Connect -->
-          <div class="col-md-7 text-center text-md-start">
+        <div class="row align-items-center gy-3">
+          <!-- Kolom 1: Quick Connect -->
+          <div class="col-md-8 text-center text-md-start">
             <h6
               class="fw-bold text-uppercase tracking-wider text-primary mb-2 small"
+              data-i18n="footer-connect"
             >
-              Connect
+              Quick Connect
             </h6>
             <ul
               class="list-unstyled d-flex flex-wrap justify-content-center justify-content-md-start gap-3 mb-0"
             >
               <li>
                 <a
-                  href="https://linkedin.com/in/ryan-bagas-pratama"
+                  href="https://linkedin.com/in/ryanbagas"
                   target="_blank"
                   class="text-white-50 text-decoration-none hover-white d-inline-flex align-items-center small"
                 >
@@ -285,7 +292,7 @@
               </li>
               <li>
                 <a
-                  href="https://github.com/ryanbagas18"
+                  href="https://github.com/ryanbagas"
                   target="_blank"
                   class="text-white-50 text-decoration-none hover-white d-inline-flex align-items-center small"
                 >
@@ -310,16 +317,17 @@
           <div class="col-md-4 text-center text-md-end">
             <h6
               class="fw-bold text-uppercase tracking-wider text-primary mb-2 small"
+              data-i18n="footer-explore"
             >
               Explore
             </h6>
             <ul class="list-unstyled d-flex flex-column gap-1 mb-0">
               <li>
                 <a
-                  href="index.html#hero"
+                  href="#project-detail-container"
                   class="text-white-50 text-decoration-none hover-white small"
                 >
-                  Back to Top <i class="bi bi-arrow-up-short"></i>
+                  <span data-i18n="footer-top">Back to Top</span> <i class="bi bi-arrow-up-short"></i>
                 </a>
               </li>
             </ul>
@@ -336,244 +344,223 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Projects Data JS -->
     <script src="assets/js/projects-data.js"></script>
+    <!-- Main JS (i18n) -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
-      // Get project ID from URL parameter
-      const urlParams = new URLSearchParams(window.location.search);
-      const projectId = urlParams.get("id");
+      function renderProjectDetail(lang) {
+        const urlParams = new URLSearchParams(window.location.search);
+        const projectId = urlParams.get("id");
+        const container = document.getElementById("project-detail-container");
 
-      // Find project in data
-      const project = projectsData.find((p) => p.id === projectId);
+        if (typeof projectsData === "undefined" || !Array.isArray(projectsData)) {
+          showError(staticTranslations[lang]["error-project-load"]);
+          return;
+        }
 
-      const projectContent = document.getElementById("project-content");
+        // Find project by ID or fallback to first project
+        let project = projectsData.find((p) => p.id === projectId);
+        if (!project) {
+          project = projectsData[0];
+        }
 
-      if (project) {
-        // Build tech stack badges
-        const techStackBadges = project.techStack
+        if (!project) {
+          showError(staticTranslations[lang]["error-project-not-found"]);
+          return;
+        }
+
+        // Update Document Title
+        document.title = `${project.title[lang]} - Project Detail - Developer Portfolio`;
+
+        // Render HTML content
+        let techStackHTML = project.techStack
           .map(
             (tech) =>
-              `<span class="badge bg-primary-subtle text-primary border" style="font-size: 0.75rem">${tech}</span>`,
+              `<span class="badge bg-light text-dark border px-3 py-2 fw-medium">${tech}</span>`
           )
-          .join(" ");
+          .join("");
 
-        // Build key features HTML
-        const keyFeaturesHtml = project.keyFeatures
-          ? project.keyFeatures
-              .map(
-                (feature) =>
-                  `<li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>${feature}</li>`,
-              )
-              .join("")
-          : "";
+        let featuresHTML = project.keyFeatures[lang]
+          .map(
+            (feature) =>
+              `<li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>${feature}</li>`
+          )
+          .join("");
 
-        // Build screenshots HTML
-        const screenshotsHtml =
-          project.screenshots && project.screenshots.length > 0
-            ? `
-            <div class="screenshot-carousel" id="screenshotCarousel">
-              <div class="carousel-track">
-                ${project.screenshots
-                  .map((screenshot, index) => {
-                    const src =
-                      typeof screenshot === "string"
-                        ? screenshot
-                        : screenshot.src;
-                    const title =
-                      typeof screenshot === "string" ? "" : screenshot.title;
-                    return `
-                  <div class="carousel-slide ${index === 0 ? "active" : ""}" data-index="${index}">
-                    <div class="carousel-image-wrapper">
-                      <img src="${src}" alt="${title || project.title}" />
-                    </div>
-                  </div>
-                `;
-                  })
-                  .join("")}
-              </div>
-              ${
-                project.screenshots.length > 1
-                  ? `
-                <button class="carousel-nav prev" id="carouselPrev">
-                  <i class="bi bi-chevron-left"></i>
-                </button>
-                <button class="carousel-nav next" id="carouselNext">
-                  <i class="bi bi-chevron-right"></i>
-                </button>
-                <div class="carousel-indicators">
-                  ${project.screenshots
-                    .map(
-                      (_, index) => `
-                    <div class="carousel-indicator ${index === 0 ? "active" : ""}" data-index="${index}"></div>
-                  `,
-                    )
-                    .join("")}
+        let screenshotsHTML = "";
+        let indicatorsHTML = "";
+
+        if (project.screenshots && project.screenshots.length > 0) {
+          project.screenshots.forEach((shot, index) => {
+            const activeClass = index === 0 ? "active" : "";
+            const shotTitle = shot.title[lang];
+            screenshotsHTML += `
+              <div class="carousel-slide ${activeClass}" data-index="${index}">
+                <div class="carousel-image-wrapper">
+                  <img src="${shot.src}" alt="${shotTitle}" />
                 </div>
-              `
-                  : ""
-              }
-              <div class="carousel-title-overlay">
-                <h6 id="carouselTitle">${typeof project.screenshots[0] === "string" ? "" : project.screenshots[0].title || ""}</h6>
+                <div class="carousel-title-overlay">
+                  <h6 class="mb-0 text-white">${shotTitle} (${index + 1} of ${project.screenshots.length})</h6>
+                </div>
               </div>
-            </div>
-          `
-            : "";
-
-        // Build links HTML
-        let linksHtml = "";
-        if (project.links.github) {
-          linksHtml += `
-            <a href="${project.links.github}" target="_blank" class="btn btn-dark me-2">
-              <i class="bi bi-github me-1"></i>GitHub
-            </a>
-          `;
-        }
-        if (project.links.liveDemo) {
-          linksHtml += `
-            <a href="${project.links.liveDemo}" target="_blank" class="btn btn-primary">
-              <i class="bi bi-box-arrow-up-right me-1"></i>Live Demo
-            </a>
-          `;
+            `;
+            indicatorsHTML += `
+              <button class="carousel-dot ${activeClass}" data-index="${index}" aria-label="Slide ${index + 1}"></button>
+            `;
+          });
         }
 
-        projectContent.innerHTML = `
-          <div class="row">
-            <div class="col-lg-8">
-              <h1 class="fw-bold text-dark mb-3">${project.title}</h1>
-              <p class="text-primary mb-2">${project.organization}</p>
-              <p class="text-muted mb-4">${project.role}</p>
-
-              <p class="lead text-secondary mb-4">${project.description}</p>
-
-              <div class="mb-4 d-flex flex-wrap gap-2">
-                ${techStackBadges}
+        container.innerHTML = `
+          <!-- Project Header -->
+          <div class="row mb-5">
+            <div class="col-lg-12">
+              <span class="badge bg-light text-dark border px-3 py-1 mb-3">${project.organization[lang]}</span>
+              <h1 class="fw-bold mb-2 display-5">${project.title[lang]}</h1>
+              <p class="text-muted fs-5 mb-3">${project.role[lang]}</p>
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                ${techStackHTML}
               </div>
-
-              <div class="mb-4">
-                ${linksHtml}
-              </div>
-            </div>
-
-            <div class="col-lg-4">
-              <img src="${project.thumbnail}" alt="${project.title}" class="img-fluid rounded shadow-lg w-100" />
             </div>
           </div>
 
-          <hr class="my-5" />
-
-          <div class="row">
-            <div class="col-lg-6 mb-4">
-              <h3 class="fw-bold text-dark mb-3">Problem Statement</h3>
-              <p class="text-secondary">${project.problemStatement}</p>
-            </div>
-
-            <div class="col-lg-6 mb-4">
-              <h3 class="fw-bold text-dark mb-3">Solution</h3>
-              <p class="text-secondary">${project.solution}</p>
-            </div>
-          </div>
-
+          <!-- Carousel / Screenshot Section -->
           ${
-            keyFeaturesHtml
+            project.screenshots && project.screenshots.length > 0
               ? `
-          <hr class="my-5" />
-
-          <div class="mb-4">
-            <h3 class="fw-bold text-dark mb-3">Key Features</h3>
-            <ul class="text-secondary">
-              ${keyFeaturesHtml}
-            </ul>
+          <div class="row mb-5">
+            <div class="col-lg-12">
+              <div class="card custom-card p-3">
+                <h4 class="fw-bold mb-3 px-2">${staticTranslations[lang]["gallery-title"]}</h4>
+                <div class="screenshot-carousel" id="projectCarousel">
+                  <div class="carousel-track">
+                    ${screenshotsHTML}
+                  </div>
+                  <button class="carousel-nav prev" id="carouselPrev" aria-label="Previous">
+                    <i class="bi bi-chevron-left"></i>
+                  </button>
+                  <button class="carousel-nav next" id="carouselNext" aria-label="Next">
+                    <i class="bi bi-chevron-right"></i>
+                  </button>
+                  <div class="carousel-indicators-custom" id="carouselIndicators">
+                    ${indicatorsHTML}
+                  </div>
+                </div>
+                <p class="text-muted small text-center mt-2 mb-0">
+                  <i class="bi bi-info-circle me-1"></i>${staticTranslations[lang]["gallery-info"]}
+                </p>
+              </div>
+            </div>
           </div>
           `
               : ""
           }
 
-          <hr class="my-5" />
+          <!-- Problem & Solution Section -->
+          <div class="row g-4 mb-5">
+            <div class="col-lg-6">
+              <div class="card custom-card h-100 p-4">
+                <h3 class="fw-bold text-dark mb-3">
+                  ${staticTranslations[lang]["problem-title"]}
+                </h3>
+                <p class="text-secondary mb-0" style="text-align: justify;">
+                  ${project.problemStatement[lang]}
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card custom-card h-100 p-4">
+                <h3 class="fw-bold text-dark mb-3">
+                  ${staticTranslations[lang]["solution-title"]}
+                </h3>
+                <p class="text-secondary mb-0" style="text-align: justify;">
+                  ${project.solution[lang]}
+                </p>
+              </div>
+            </div>
+          </div>
 
-          <div class="mb-4">
-            <h3 class="fw-bold text-dark mb-3">Screenshots</h3>
-            <div class="row">
-              <div class="col-12">
-                ${screenshotsHtml}
+          <!-- Key Features Section -->
+          <div class="row mb-4">
+            <div class="col-lg-12">
+              <div class="card custom-card p-4">
+                <h3 class="fw-bold text-dark mb-4">
+                  ${staticTranslations[lang]["features-title"]}
+                </h3>
+                <ul class="list-unstyled mb-0 fs-6">
+                  ${featuresHTML}
+                </ul>
               </div>
             </div>
           </div>
         `;
 
-        // Update page title
-        document.title = `${project.title} - Portofolio Developer`;
+        // Initialize Carousel Logic if screenshots exist
+        if (project.screenshots && project.screenshots.length > 0) {
+          const slides = container.querySelectorAll(".carousel-slide");
+          const dots = container.querySelectorAll(".carousel-dot");
+          const btnPrev = container.querySelector("#carouselPrev");
+          const btnNext = container.querySelector("#carouselNext");
+          let currentIndex = 0;
+          const totalSlides = slides.length;
 
-        // Initialize carousel functionality
-        if (project.screenshots && project.screenshots.length > 1) {
-          setTimeout(() => {
-            const carousel = document.getElementById("screenshotCarousel");
-            if (!carousel) return;
+          function updateCarousel(newIndex) {
+            slides[currentIndex].classList.remove("active");
+            dots[currentIndex].classList.remove("active");
 
-            const slides = carousel.querySelectorAll(".carousel-slide");
-            const indicators = carousel.querySelectorAll(".carousel-indicator");
-            const prevBtn = document.getElementById("carouselPrev");
-            const nextBtn = document.getElementById("carouselNext");
-            const titleOverlay = document.getElementById("carouselTitle");
-            let currentIndex = 0;
+            currentIndex = (newIndex + totalSlides) % totalSlides;
 
-            function showSlide(index) {
-              if (index < 0) index = slides.length - 1;
-              if (index >= slides.length) index = 0;
+            slides[currentIndex].classList.add("active");
+            dots[currentIndex].classList.add("active");
+          }
 
-              slides.forEach((slide, i) => {
-                slide.classList.toggle("active", i === index);
-              });
-
-              indicators.forEach((indicator, i) => {
-                indicator.classList.toggle("active", i === index);
-              });
-
-              const currentScreenshot = project.screenshots[index];
-              titleOverlay.textContent =
-                typeof currentScreenshot === "string"
-                  ? ""
-                  : currentScreenshot.title || "";
-
-              prevBtn.disabled = false;
-              nextBtn.disabled = false;
-
-              currentIndex = index;
-            }
-
-            prevBtn.addEventListener("click", () => {
-              showSlide(currentIndex - 1);
+          if (btnPrev && btnNext) {
+            btnPrev.addEventListener("click", () => {
+              updateCarousel(currentIndex - 1);
             });
 
-            nextBtn.addEventListener("click", () => {
-              showSlide(currentIndex + 1);
+            btnNext.addEventListener("click", () => {
+              updateCarousel(currentIndex + 1);
             });
+          }
 
-            indicators.forEach((indicator, index) => {
-              indicator.addEventListener("click", () => {
-                showSlide(index);
-              });
+          dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => {
+              updateCarousel(index);
             });
-
-            document.addEventListener("keydown", (e) => {
-              if (e.key === "ArrowLeft") {
-                showSlide(currentIndex - 1);
-              } else if (e.key === "ArrowRight") {
-                showSlide(currentIndex + 1);
-              }
-            });
-          }, 100);
+          });
         }
-      } else {
-        projectContent.innerHTML = `
-          <div class="text-center py-5">
-            <h2 class="fw-bold text-dark mb-3">Project Not Found</h2>
-            <p class="text-secondary mb-4">The project you're looking for doesn't exist.</p>
-            <a href="index.html#projects" class="btn btn-primary">
-              <i class="bi bi-arrow-left me-1"></i>Back to Projects
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const lang = typeof getCurrentLanguage === "function" ? getCurrentLanguage() : "en";
+        renderProjectDetail(lang);
+
+        // Listen for language changes from main.js
+        window.addEventListener("languageChanged", function (e) {
+          renderProjectDetail(e.detail.lang);
+        });
+      });
+
+      function showError(message) {
+        const container = document.getElementById("project-detail-container");
+        const lang = typeof getCurrentLanguage === "function" ? getCurrentLanguage() : "en";
+        container.innerHTML = `
+          <div class="alert alert-danger text-center py-4" role="alert">
+            <i class="bi bi-exclamation-octagon fs-2 mb-2 d-block"></i>
+            <h4 class="alert-heading fw-bold">${staticTranslations[lang]["error-project-heading"]}</h4>
+            <p class="mb-3">${message}</p>
+            <a href="index.html#projects" class="btn btn-primary btn-sm">
+              <i class="bi bi-arrow-left me-2"></i>${staticTranslations[lang]["btn-back-portfolio"]}
             </a>
           </div>
         `;
       }
     </script>
+
   </body>
 </html>
