@@ -15,6 +15,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <!-- Custom Design System -->
+    <link rel="stylesheet" href="style.css" />
 
     <style>
       .hero-section {
@@ -35,6 +37,11 @@
 
       .style-paragraph {
         line-height: 1.8;
+      }
+
+      .style-paragraph p {
+        text-align: justify;
+        text-indent: 2em;
       }
     </style>
   </head>
@@ -59,24 +66,67 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto align-items-center">
             <li class="nav-item">
-              <a class="nav-link" href="index.html#hero" data-i18n="nav-home">Home</a>
+              <a class="nav-link" href="index.html#hero" data-i18n="nav-home"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#projects" data-i18n="nav-projects">Projects</a>
+              <a
+                class="nav-link"
+                href="index.html#projects"
+                data-i18n="nav-projects"
+                >Projects</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#skills" data-i18n="nav-skills">Skills</a>
+              <a
+                class="nav-link active"
+                href="about.html"
+                data-i18n="nav-about"
+                >About Me</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#contact" data-i18n="nav-contact">Contact</a>
+              <a
+                class="nav-link"
+                href="index.html#contact"
+                data-i18n="nav-contact"
+                >Contact</a
+              >
             </li>
             <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-              <div class="btn-group btn-group-sm" role="group" aria-label="Language Switcher">
-                <button type="button" class="btn btn-outline-primary lang-switcher d-flex align-items-center gap-2" data-lang="id">
-                  <img src="https://flagcdn.com/w20/id.png" srcset="https://flagcdn.com/w40/id.png 2x" width="20" alt="Indonesia" style="pointer-events: none;"> ID
+              <div
+                class="btn-group btn-group-sm"
+                role="group"
+                aria-label="Language Switcher"
+              >
+                <button
+                  type="button"
+                  class="btn btn-outline-primary lang-switcher d-flex align-items-center gap-2"
+                  data-lang="id"
+                >
+                  <img
+                    src="https://flagcdn.com/w20/id.png"
+                    srcset="https://flagcdn.com/w40/id.png 2x"
+                    width="20"
+                    alt="Indonesia"
+                    style="pointer-events: none"
+                  />
+                  ID
                 </button>
-                <button type="button" class="btn btn-outline-primary lang-switcher d-flex align-items-center gap-2" data-lang="en">
-                  <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x" width="20" alt="English" style="pointer-events: none;"> EN
+                <button
+                  type="button"
+                  class="btn btn-outline-primary lang-switcher d-flex align-items-center gap-2"
+                  data-lang="en"
+                >
+                  <img
+                    src="https://flagcdn.com/w20/gb.png"
+                    srcset="https://flagcdn.com/w40/gb.png 2x"
+                    width="20"
+                    alt="English"
+                    style="pointer-events: none"
+                  />
+                  EN
                 </button>
               </div>
             </li>
@@ -98,7 +148,9 @@
               >
                 <!-- Judul & Underline Aksen Tipis -->
                 <div class="text-center mb-4">
-                  <h1 class="fw-bold text-dark mb-2" data-i18n="about-title">About Me</h1>
+                  <h1 class="fw-bold text-dark mb-2" data-i18n="about-title">
+                    About Me
+                  </h1>
                   <div
                     class="bg-primary mx-auto rounded"
                     style="width: 50px; height: 2px"
@@ -106,25 +158,34 @@
                 </div>
 
                 <!-- Deskripsi / Narasi Utama -->
-                <div class="text-secondary mb-4 style-paragraph">
+                <div class="text-dark mb-4 style-paragraph">
                   <p class="mb-3" data-i18n="about-p1">
-                    I hold a Bachelor's degree in Information Systems from
-                    Universitas Surabaya (UBAYA), where I developed a strong
-                    foundation in full-stack web development, system analysis,
-                    and business process design.
-                  </p>
-                  <p class="mb-3" data-i18n="about-p2">
+                    I hold a Bachelor's degree in Computing (S.Kom) in
+                    Information Systems from Universitas Surabaya (UBAYA), where
+                    I developed a strong foundation in full-stack web
+                    development, systems analysis, and business process design.
                     My technical work revolves around building scalable web
                     applications using Laravel, managing MySQL databases, and
-                    prototyping user interfaces in Figma. Beyond writing code,
-                    I actively hone my leadership, team management, and
-                    communication skills through my roles as a Vocal Trainer for
-                    the UBAYA Choir and an event committee member for FESPA
-                    UBAYA.
+                    prototyping user interfaces in Figma.
+                  </p>
+                  <p class="mb-3" data-i18n="about-p2">
+                    Beyond writing code, I actively hone my leadership, team
+                    management, and operational troubleshooting skills. As a
+                    Vocal Trainer for UBAYA Choir, I directed talent development
+                    and technical preparations that led the team to secure 4
+                    Gold Medals in national and international competitions.
+                    Additionally, my role as Steering Committee and Head of
+                    Logistics for FESPA UBAYA strengthened my cross-functional
+                    communication and risk mitigation skills in handling
+                    large-scale events.
                   </p>
                   <p class="mb-0" data-i18n="about-p3">
-                    I am driven by the process of taking complex problems and
-                    translating them into simple, elegant digital solutions.
+                    For my final capstone project, I translated these two
+                    domains into a practical digital solution by developing a
+                    web-based Recruitment and Training Management Information
+                    System to digitize membership workflows for UBAYA Choir. I
+                    am driven by taking complex organizational processes and
+                    turning them into simple, elegant digital solutions.
                   </p>
                 </div>
 
@@ -137,14 +198,36 @@
                     Quick Info
                   </h6>
                   <div class="row g-3">
+                    <!-- First Row: Education (left) and GPA (right) -->
+                    <div class="col-sm-6 text-dark small">
+                      <i class="bi bi-mortarboard-fill text-primary me-2"></i>
+                      <strong data-i18n="about-education-label"
+                        >Education:</strong
+                      >
+                      <span data-i18n="about-education-value"
+                        >Bachelor of Computing (S.Kom) in Informatics
+                        Engineering - Business Information Systems, UBAYA</span
+                      >
+                    </div>
+                    <div class="col-sm-6 text-dark small">
+                      <i class="bi bi-trophy-fill text-primary me-2"></i>
+                      <strong data-i18n="about-gpa-label">GPA:</strong>
+                      <span data-i18n="about-gpa-value">3.38 / 4.00</span>
+                    </div>
+                    <!-- Second Row: Email (left) and Location (right) -->
                     <div class="col-sm-6 text-dark small">
                       <i class="bi bi-envelope-fill text-primary me-2"></i>
-                      <strong>Email:</strong>
+                      <strong data-i18n="about-email-label">Email:</strong>
                       ryanbagaspratama18@gmail.com
                     </div>
                     <div class="col-sm-6 text-dark small">
-                      <i class="bi bi-mortarboard-fill text-primary me-2"></i>
-                      <strong data-i18n="about-education-label">Education:</strong> <span data-i18n="about-education-value">S1 Sistem Informasi, UBAYA</span>
+                      <i class="bi bi-geo-alt-fill text-primary me-2"></i>
+                      <strong data-i18n="about-location-label"
+                        >Location:</strong
+                      >
+                      <span data-i18n="about-location-value"
+                        >Surabaya, East Java, Indonesia</span
+                      >
                     </div>
                   </div>
                 </div>
@@ -159,8 +242,12 @@
                   >
                     <i class="bi bi-download me-2"></i>Download CV
                   </a>
-                  <a href="index.html" class="btn btn-outline-secondary px-4 py-2">
-                    <i class="bi bi-arrow-left me-2"></i><span data-i18n="btn-back-home">Back to Home</span>
+                  <a
+                    href="index.html"
+                    class="btn btn-outline-secondary px-4 py-2"
+                  >
+                    <i class="bi bi-arrow-left me-2"></i
+                    ><span data-i18n="btn-back-home">Back to Home</span>
                   </a>
                 </div>
               </div>
@@ -235,7 +322,8 @@
                   href="index.html#hero"
                   class="text-white-50 text-decoration-none hover-white small"
                 >
-                  <span data-i18n="footer-top">Back to Top</span> <i class="bi bi-arrow-up-short"></i>
+                  <span data-i18n="footer-top">Back to Top</span>
+                  <i class="bi bi-arrow-up-short"></i>
                 </a>
               </li>
             </ul>
@@ -256,6 +344,5 @@
     <script src="assets/js/main.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
   </body>
 </html>

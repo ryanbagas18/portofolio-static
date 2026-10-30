@@ -3,17 +3,25 @@ const staticTranslations = {
     "nav-home": "Home",
     "nav-projects": "Projects",
     "nav-skills": "Skills",
+    "nav-experience": "Experience",
+    "nav-about": "About Me",
+    "nav-certifications": "Certifications",
+    "nav-achievements": "Achievements",
     "nav-contact": "Contact",
     "hero-greeting": "Hello, I'm Ryan Bagas Pratama",
-    "hero-title": "Web & Full-Stack Developer | Informatics Engineering Graduate",
+    "hero-title":
+      "Full-Stack Web Developer | Informatics Engineering - Information Systems Graduate",
     "hero-desc":
-      "An Information Systems graduate from the University of Surabaya with a strong focus on web development, system analysis, and business process design. Experienced in building robust web applications using Laravel & MySQL and designing intuitive UI/UX workflows in Figma. Continuously sharpening leadership and team management capabilities through active roles as a UBAYA Choir Trainer and FESPA UBAYA Committee Lead.",
+      "An Information Systems graduate (S.Kom.) from Universitas Surabaya with a focus on full-stack web development using Laravel and MySQL, as well as UI/UX design with Figma. Experienced in developing web-based Management Information Systems and applying system analysis to improve organizational workflows. Also brings leadership and team coordination experience through talent development initiatives and large-scale national and international events.",
     "btn-download-cv": "Download CV",
     "btn-learn-more": "Learn More",
     "section-experience": "Experience",
     "section-projects": "Projects",
     "section-education": "Education",
     "section-skills": "Skills & Tools",
+    "section-experience": "Experience",
+    "section-about": "About Me",
+    "section-certifications": "Certifications",
     "section-achievements": "Achievements",
     "section-contact": "Contact",
     "contact-desc":
@@ -37,32 +45,39 @@ const staticTranslations = {
     // About page
     "about-title": "About Me",
     "about-p1":
-      "I hold a Bachelor's degree in Information Systems from Universitas Surabaya (UBAYA), where I developed a strong foundation in full-stack web development, system analysis, and business process design.",
+      "   I am an Information Systems graduate from Universitas Surabaya (UBAYA), with a strong interest in full-stack web development, systems analysis, and business process improvement. My technical experience includes building web applications with Laravel, managing MySQL databases, and designing user interfaces through Figma.",
     "about-p2":
-      "My technical work revolves around building scalable web applications using Laravel, managing MySQL databases, and prototyping user interfaces in Figma. Beyond writing code, I actively hone my leadership, team management, and communication skills through my roles as a Vocal Trainer for the UBAYA Choir and an event committee member for FESPA UBAYA.",
+      "   Beyond technology, I have developed leadership and team management skills through organizational experiences. As a Trainer in the Training Division of UBAYA Choir, I contributed to member development and competition preparation, being part of a team that achieved 4 Gold Medals across national and international competitions. I also served as Steering Committee and Logistics Division Coordinator for FESPA UBAYA, gaining experience in cross-functional coordination and large-scale event management.",
     "about-p3":
-      "I am driven by the process of taking complex problems and translating them into simple, elegant digital solutions.",
+      "   My interest in technology and organizational development comes together in my capstone project: a web-based Recruitment and Training Management Information System for UBAYA Choir. I enjoy understanding complex workflows and transforming them into practical, efficient, and user-friendly digital solutions.",
     "about-quick-info": "Quick Info",
+    "about-email-label": "Email:",
     "about-education-label": "Education:",
-    "about-education-value": "Bachelor of Information Systems, UBAYA",
+    "about-education-value":
+      "Bachelor of Computing (S.Kom.) — Informatics Engineering, Information Systems Program, UBAYA",
+    "about-location-label": "Location:",
+    "about-location-value": "Surabaya, East Java, Indonesia",
+    "about-gpa-label": "GPA:",
+    "about-gpa-value": "3.38 / 4.00",
+
     "btn-back-home": "Back to Home",
     // Experience items
     "exp-trainer-title": "Trainer / Training Division",
     "exp-trainer-org": "UBAYA Choir",
     "exp-trainer-desc":
-      "Designed and executed comprehensive choir training programs, ranging from onboarding new trainees to preparing the ensemble for national and international competitions. Ensured every member mastered precise sheet music reading, rhythmic accuracy, vocal articulation, and expressive musical dynamics. Successfully led the team to achieve Gold Medals at the National Student Pesparawi (Semarang 2022 & Kupang 2024), alongside Jury Prizes, Grand Finalist standings, and 2 Gold Medals at the 10th AVOS International Choral Competition 2023 in Bangkok, Thailand.",
+      "Designed and delivered choir training programs focused on developing members' vocal and musical competencies, including sight-reading, ear training, intonation accuracy, vocal articulation, and musical expression. Led regular training sessions and prepared the ensemble for national and international competitions, contributing to achievements including 4 Gold Medals across national and international competitions.",
     "exp-sc-title": "Steering Committee",
     "exp-sc-org": "9th FESPA UBAYA",
     "exp-sc-desc":
-      "Supervised inter-division workflows and directed the execution of a national choral competition. Accountable for operational troubleshooting and cross-functional risk management to ensure seamless event delivery.",
+      "Coordinated cross-divisional operations and supervised event execution for a national choral competition. Managed operational troubleshooting, addressed coordination challenges, and supported risk mitigation to ensure smooth event delivery.",
     "exp-log-title": "Logistics Division Coordinator",
     "exp-log-org": "8th FESPA UBAYA",
     "exp-log-desc":
-      "Led logistics operations for a national choir competition, managing vendor relationships, infrastructure procurement, and venue technical risk mitigation.",
+      "Led the logistics team in managing infrastructure procurement, vendor coordination, budget planning, and equipment distribution. Ensured operational readiness and addressed logistical challenges throughout the preparation and execution of a national choral competition.",
     // Education items
     "edu-ubaya-title": "University of Surabaya (UBAYA)",
     "edu-ubaya-degree":
-      "Bachelor of Computer Science (S.Kom) - Informatics Engineering - Business Information Systems",
+      "Bachelor of Computing (S.Kom.) — Informatics Engineering, Information Systems Program",
     "edu-ubaya-desc":
       "GPA: 3.38 / 4.00. Achiever Scholarship Recipient. Active as a UBAYA Choir Trainer and FESPA UBAYA Committee Lead.",
     "edu-sman-title": "SMAN 15 Surabaya",
@@ -70,55 +85,145 @@ const staticTranslations = {
     "edu-sman-desc":
       "Active in Libels Voice extracurricular choir and Christian Fellowship student organization.",
     // Achievement items
-    "ach-pesparawi-24-title": "Gold Medal - 18th National Student PESPARAWI 2024",
+    "ach-pesparawi-24-title":
+      "Gold Medal — 18th National Student PESPARAWI 2024",
     "ach-pesparawi-24-org":
-      "National Student PESPARAWI (Kupang, East Nusa Tenggara)",
+      "National Student PESPARAWI — Kupang, East Nusa Tenggara",
     "ach-pesparawi-24-desc":
-      "Awarded Gold Medal representing the University of Surabaya at the national level student choir competition.",
+      "Contributed to UBAYA Choir's achievement of a Gold Medal at the 18th National Student PESPARAWI competition.",
     "ach-avos-23-title":
-      "Jury Prize, Grand Finalist & 2 Gold Medals - 10th AVOS International Choral Competition 2023",
+      "Jury Prize, Grand Finalist & 2 Gold Medals — 10th AVOS International Choral Competition",
     "ach-avos-23-org":
-      "AVOS International Choral Competition (Bangkok, Thailand)",
+      "AVOS International Choral Competition — Bangkok, Thailand",
     "ach-avos-23-desc":
-      "Achieved prestigious international recognition including Jury Prize, Grand Finalist placement, and 2 Gold Medals in international choral categories.",
-    "ach-pesparawi-22-title": "Gold Medal - 17th National Student PESPARAWI 2022",
-    "ach-pesparawi-22-org": "National Student PESPARAWI (Semarang, Central Java)",
-    "ach-pesparawi-22-desc": "Secured Gold Medal in national choir championship representing UBAYA.",
+      "Contributed to the team's international achievements, receiving 2 Gold Medals, a Jury Prize, and Grand Finalist recognition across competition categories.",
+    "ach-pesparawi-22-title":
+      "Gold Medal — 17th National Student PESPARAWI 2022",
+    "ach-pesparawi-22-org":
+      "National Student PESPARAWI — Semarang, Central Java",
+    "ach-pesparawi-22-desc":
+      "Contributed to UBAYA Choir's achievement of a Gold Medal at the 17th National Student PESPARAWI competition.",
+    "ach-peksimida-title":
+      "3rd Place — Vocal Group (Two Competition Periods)",
+    "ach-peksimida-org":
+      "East Java Student Arts Week (Peksimida Jawa Timur)",
+    "ach-peksimida-desc":
+      "Coached and mentored choir members in preparation for vocal competitions while representing Universitas Surabaya as a participant in the Men's Classical Solo Vocal category. Contributed to maintaining the 3rd Place Vocal Group title across two competition periods (2022 and 2024).",
     // Skills categories
-    "skill-backend": "Backend",
-    "skill-database": "Database",
-    "skill-frontend": "Frontend",
-    "skill-tools": "Tools & Design",
-    "skill-method": "Methodology",
+    "skill-backend": "Backend Development",
+    "skill-database": "Database Management",
+    "skill-frontend": "Frontend Development",
+    "skill-tools": "Tools & Development Environment",
+    "skill-method": "Systems Analysis & Methodologies",
     "skill-soft": "Soft Skills",
     // Skills items
-    "skill-db-design": "Database Design",
-    "skill-uiux": "UI/UX Design",
-    "skill-excel": "Microsoft Excel",
-    "skill-analyst": "System Analyst",
-    "skill-flowchart": "System Flowchart",
-    "skill-mapping": "Business Process Mapping",
-    "skill-saw": "SAW Algorithm",
-    "skill-problem": "Problem Solving",
-    "skill-thinking": "Analytical Thinking",
+    "skill-php": "PHP",
+    "skill-laravel": "Laravel",
+    "skill-rest": "RESTful API",
+    "skill-oop": "Object-Oriented Programming (OOP)",
+    "skill-html": "HTML5",
+    "skill-css": "CSS3",
+    "skill-js": "JavaScript",
+    "skill-bootstrap": "Bootstrap",
+    "skill-mysql": "MySQL",
+    "skill-sql": "SQL",
+    "skill-rdb": "Relational Database Design",
+    "skill-git": "Git & GitHub",
+    "skill-docker": "Docker",
+    "skill-vscode": "Visual Studio Code",
+    "skill-figma": "Figma",
+    "skill-xampp": "XAMPP",
+    "skill-laragon": "Laragon",
+    "skill-sa": "Systems Analysis",
+    "skill-bpm": "Business Process Mapping",
+    "skill-bpmn": "BPMN 2.0",
+    "skill-sf": "System Flowchart",
+    "skill-saw": "Simple Additive Weighting (SAW)",
+    "skill-sdlc": "Software Development Life Cycle (SDLC)",
+    "skill-at": "Analytical Thinking",
+    "skill-ps": "Problem-Solving",
     "skill-teamwork": "Teamwork",
+    "skill-leadership": "Leadership",
     "skill-adapt": "Adaptability",
+    // Certifications section
+    "cert-desc": "Professional certifications and completed courses that demonstrate my continuous learning and development in web development, programming, database management, and project management.",
+    "cert-view-credential": "View Credential",
+    "cert-issued": "Issued",
+    "cert-expires": "Expires",
+    "cert-cred-id": "Credential ID",
+    "cert-competencies": "Key Competencies",
+    // Certification 1 - Intermediate Assistant Web Developer
+    "cert-1-title": "Intermediate Assistant Web Developer",
+    "cert-1-issuer": "Digital Talent Scholarship",
+    "cert-1-date": "October 2026",
+    "cert-1-id": "21211989840-2767",
+    "cert-1-desc": "Official Certificate of Completion issued by Digital Talent Academy (DTS 2026), Ministry of Communication and Digital.",
+    "cert-1-comp-1": "Writing clean code following industry guidelines and best practices.",
+    "cert-1-comp-2": "Implementing structured programming concepts.",
+    "cert-1-comp-3": "Integrating pre-existing libraries and reusable software components.",
+    // Certification 2 - JavaScript Essentials 1
+    "cert-2-title": "JavaScript Essentials 1",
+    "cert-2-issuer": "Cisco Networking Academy",
+    "cert-2-date": "October 2026",
+    "cert-2-id": "40210294-edb0-473e-bcd2-5b40fcd89331",
+    "cert-2-desc": "Official Statement of Achievement for completing the JavaScript Essentials 1 course, provided by Cisco Networking Academy in collaboration with OpenEDG JavaScript Institute.",
+    "cert-2-comp-1": "JavaScript syntax and data types.",
+    "cert-2-comp-2": "Control flow and functions.",
+    "cert-2-comp-3": "Exception handling.",
+    "cert-2-comp-4": "Basic debugging techniques.",
+    // Certification 3 - Fundamental of Assistant Web Developer
+    "cert-3-title": "Fundamental of Assistant Web Developer",
+    "cert-3-issuer": "Digital Talent Scholarship",
+    "cert-3-date": "October 2026",
+    "cert-3-id": "21211988840-9574",
+    "cert-3-desc": "Official Certificate of Completion issued by Digital Talent Academy (DTS 2026), Ministry of Communication and Digital.",
+    "cert-3-comp-1": "User interface (UI) implementation.",
+    "cert-3-comp-2": "Executing text, graphics, and multimedia programming commands.",
+    "cert-3-comp-3": "Structuring functions, files, and project resources efficiently.",
+    // Certification 4 - Memulai Pemrograman dengan C
+    "cert-4-title": "Getting Started with C Programming (Memulai Pemrograman dengan C)",
+    "cert-4-issuer": "Dicoding Indonesia",
+    "cert-4-date": "September 2026",
+    "cert-4-expires": "September 2029",
+    "cert-4-id": "81P2K831QXOY",
+    "cert-4-desc": "Completed a foundational programming course covering the C programming language and programming fundamentals.",
+    // Certification 5 - SQL Intermediate
+    "cert-5-title": "SQL Intermediate",
+    "cert-5-issuer": "Sololearn",
+    "cert-5-date": "September 2026",
+    "cert-5-id": "CC-AMDBE2B5",
+    "cert-5-desc": "Completed an intermediate SQL course covering relational database concepts and SQL querying.",
+    // Certification 6 - Belajar Dasar Manajemen Proyek
+    "cert-6-title": "Project Management Basics (Belajar Dasar Manajemen Proyek)",
+    "cert-6-issuer": "Dicoding Indonesia",
+    "cert-6-date": "September 2026",
+    "cert-6-expires": "September 2029",
+    "cert-6-id": "4EXGJ990EXRL",
+    "cert-6-desc": "Completed a foundational course in project management, covering basic project management concepts and practices.",
   },
   id: {
     "nav-home": "Beranda",
     "nav-projects": "Proyek",
     "nav-skills": "Keahlian",
+    "nav-experience": "Pengalaman",
+    "nav-about": "Tentang Saya",
+    "nav-certifications": "Sertifikasi",
+    "nav-achievements": "Prestasi",
     "nav-contact": "Kontak",
     "hero-greeting": "Halo, Saya Ryan Bagas Pratama",
-    "hero-title": "Web & Full-Stack Developer | Lulusan Teknik Informatika",
+    "hero-title":
+      "Full-Stack Web Developer | Lulusan Teknik Informatika - Sistem Informasi",
     "hero-desc":
-      "Lulusan Sistem Informasi dari Universitas Surabaya dengan fokus yang kuat pada pengembangan web, analisis sistem, dan desain proses bisnis. Berpengalaman dalam membangun aplikasi web yang kokoh menggunakan Laravel & MySQL dan merancang alur kerja UI/UX yang intuitif di Figma. Terus mengasah kemampuan kepemimpinan dan manajemen tim melalui peran aktif sebagai Pelatih Paduan Suara UBAYA dan Ketua Panitia FESPA UBAYA.",
+      "Lulusan Sistem Informasi (S.Kom.) dari Universitas Surabaya dengan fokus pada pengembangan web full-stack menggunakan Laravel dan MySQL, serta desain UI/UX dengan Figma. Berpengalaman dalam mengembangkan Sistem Informasi Manajemen berbasis web dan menerapkan analisis sistem untuk meningkatkan alur kerja organisasi. Juga membawa pengalaman kepemimpinan dan koordinasi tim melalui inisiatif pengembangan bakat dan acara berskala nasional dan internasional.",
     "btn-download-cv": "Unduh CV",
     "btn-learn-more": "Pelajari Lebih Lanjut",
     "section-experience": "Pengalaman",
     "section-projects": "Proyek",
     "section-education": "Pendidikan",
     "section-skills": "Keahlian & Alat",
+    "section-experience": "Pengalaman",
+    "section-about": "Tentang Saya",
+    "section-certifications": "Sertifikasi",
     "section-achievements": "Prestasi",
     "section-contact": "Kontak",
     "contact-desc":
@@ -142,32 +247,39 @@ const staticTranslations = {
     // About page
     "about-title": "Tentang Saya",
     "about-p1":
-      "Saya memegang gelar Sarjana Sistem Informasi dari Universitas Surabaya (UBAYA), di mana saya mengembangkan landasan yang kuat dalam pengembangan web full-stack, analisis sistem, dan desain proses bisnis.",
+      "   Saya adalah lulusan Sistem Informasi dari Universitas Surabaya (UBAYA), dengan ketertarikan kuat pada pengembangan web full-stack, analisis sistem, dan peningkatan proses bisnis. Pengalaman teknis saya meliputi membangun aplikasi web dengan Laravel, mengelola database MySQL, dan merancang antarmuka pengguna melalui Figma.",
     "about-p2":
-      "Pekerjaan teknis saya berpusat pada membangun aplikasi web yang skalabel menggunakan Laravel, mengelola database MySQL, dan membuat prototipe antarmuka pengguna di Figma. Selain menulis kode, saya secara aktif mengasah keterampilan kepemimpinan, manajemen tim, dan komunikasi melalui peran saya sebagai Pelatih Vokal untuk Paduan Suara UBAYA dan anggota panitia acara untuk FESPA UBAYA.",
+      "   Di luar teknologi, saya telah mengembangkan kemampuan kepemimpinan dan manajemen tim melalui pengalaman organisasi. Sebagai Pelatih di Divisi Pelatihan UBAYA Choir, saya berkontribusi pada pengembangan anggota dan persiapan kompetisi, menjadi bagian dari tim yang meraih 4 Medali Emas di kompetisi nasional dan internasional. Saya juga pernah menjabat sebagai Steering Committee dan Koordinator Divisi Logistik FESPA UBAYA, mendapatkan pengalaman dalam koordinasi lintas fungsi dan manajemen acara berskala besar.",
     "about-p3":
-      "Saya didorong oleh proses mengambil masalah yang kompleks dan menerjemahkannya menjadi solusi digital yang sederhana dan elegan.",
+      "   Ketertarikan saya pada teknologi dan pengembangan organisasi bersatu dalam proyek tugas akhir saya: Sistem Informasi Manajemen Rekrutmen dan Pelatihan berbasis web untuk UBAYA Choir. Saya senang memahami alur kerja yang kompleks dan mengubahnya menjadi solusi digital yang praktis, efisien, dan mudah digunakan.",
     "about-quick-info": "Info Cepat",
+    "about-email-label": "Email:",
     "about-education-label": "Pendidikan:",
-    "about-education-value": "S1 Sistem Informasi, UBAYA",
+    "about-education-value":
+      "Sarjana Komputer (S.Kom.) — Teknik Informatika, Program Sistem Informasi, UBAYA",
+    "about-location-label": "Lokasi:",
+    "about-location-value": "Surabaya, Jawa Timur, Indonesia",
+    "about-gpa-label": "IPK:",
+    "about-gpa-value": "3.38 / 4.00",
+
     "btn-back-home": "Kembali ke Beranda",
     // Experience items
-    "exp-trainer-title": "Pelatih / Divisi Latihan",
+    "exp-trainer-title": "Pelatih / Divisi Pelatihan",
     "exp-trainer-org": "Paduan Suara UBAYA",
     "exp-trainer-desc":
-      "Merancang dan melaksanakan program pelatihan paduan suara yang komprehensif, mulai dari pengenalan anggota baru hingga persiapan ansambel untuk kompetisi nasional dan internasional. Memastikan setiap anggota menguasai pembacaan partitur yang presisi, akurasi ritmik, artikulasi vokal, dan dinamika musik yang ekspresif. Berhasil memimpin tim meraih Medali Emas di Pesparawi Mahasiswa Nasional (Semarang 2022 & Kupang 2024), serta Jury Prize, Grand Finalist, dan 2 Medali Emas di 10th AVOS International Choral Competition 2023 di Bangkok, Thailand.",
+      "Merancang dan menyampaikan program pelatihan paduan suara yang berfokus pada pengembangan kompetensi vokal dan musik anggota, termasuk sight-reading, ear training, akurasi intonasi, artikulasi vokal, dan ekspresi musik. Memimpin sesi pelatihan reguler dan mempersiapkan ansambel untuk kompetisi nasional dan internasional, berkontribusi pada pencapaian termasuk 4 Medali Emas di kompetisi nasional dan internasional.",
     "exp-sc-title": "Steering Committee",
     "exp-sc-org": "FESPA UBAYA ke-9",
     "exp-sc-desc":
-      "Mengawasi alur kerja antar-divisi dan mengarahkan pelaksanaan kompetisi paduan suara tingkat nasional. Bertanggung jawab atas pemecahan masalah operasional dan manajemen risiko lintas fungsi untuk memastikan penyampaian acara yang mulus.",
+      "Mengkoordinasikan operasi lintas divisi dan mengawasi pelaksanaan acara untuk kompetisi paduan suara nasional. Mengelola pemecahan masalah operasional, mengatasi tantangan koordinasi, dan mendukung mitigasi risiko untuk memastikan penyampaian acara yang lancar.",
     "exp-log-title": "Koordinator Divisi Logistik",
     "exp-log-org": "FESPA UBAYA ke-8",
     "exp-log-desc":
-      "Memimpin operasional logistik untuk kompetisi paduan suara tingkat nasional, mengelola hubungan vendor, pengadaan infrastruktur, dan mitigasi risiko teknis tempat acara.",
+      "Memimpin tim logistik dalam mengelola pengadaan infrastruktur, koordinasi vendor, perencanaan anggaran, dan distribusi peralatan. Memastikan kesiapan operasional dan mengatasi tantangan logistik di seluruh persiapan dan pelaksanaan kompetisi paduan suara nasional.",
     // Education items
     "edu-ubaya-title": "Universitas Surabaya (UBAYA)",
     "edu-ubaya-degree":
-      "Sarjana Komputer (S.Kom) - Teknik Informatika - Sistem Informasi Bisnis",
+      "Sarjana Komputer (S.Kom.) — Teknik Informatika, Program Sistem Informasi",
     "edu-ubaya-desc":
       "IPK: 3.38 / 4.00. Penerima Beasiswa Berprestasi. Aktif sebagai Pelatih Paduan Suara UBAYA dan Ketua Panitia FESPA UBAYA.",
     "edu-sman-title": "SMAN 15 Surabaya",
@@ -176,40 +288,119 @@ const staticTranslations = {
       "Aktif dalam paduan suara ekstrakurikuler Libels Voice dan organisasi siswa Persekutuan Kristen.",
     // Achievement items
     "ach-pesparawi-24-title":
-      "Medali Emas - Pesparawi Mahasiswa Nasional XVIII 2024",
-    "ach-pesparawi-24-org": "Pesparawi Mahasiswa Nasional (Kupang, NTT)",
+      "Medali Emas — Pesparawi Mahasiswa Nasional XVIII 2024",
+    "ach-pesparawi-24-org": "Pesparawi Mahasiswa Nasional — Kupang, NTT",
     "ach-pesparawi-24-desc":
-      "Dianugerahi Medali Emas mewakili Universitas Surabaya pada kompetisi paduan suara mahasiswa tingkat nasional.",
+      "Berkontribusi pada pencapaian Medali Emas Paduan Suara UBAYA pada kompetisi Pesparawi Mahasiswa Nasional ke-18.",
     "ach-avos-23-title":
-      "Jury Prize, Grand Finalist & 2 Medali Emas - 10th AVOS International Choral Competition 2023",
+      "Jury Prize, Grand Finalist & 2 Medali Emas — 10th AVOS International Choral Competition",
     "ach-avos-23-org":
-      "AVOS International Choral Competition (Bangkok, Thailand)",
+      "AVOS International Choral Competition — Bangkok, Thailand",
     "ach-avos-23-desc":
-      "Meraih pengakuan internasional bergengsi termasuk Jury Prize, penempatan Grand Finalist, dan 2 Medali Emas dalam kategori paduan suara internasional.",
+      "Berkontribusi pada pencapaian internasional tim, menerima 2 Medali Emas, Jury Prize, dan pengakuan Grand Finalist di berbagai kategori kompetisi.",
     "ach-pesparawi-22-title":
-      "Medali Emas - Pesparawi Mahasiswa Nasional XVII 2022",
-    "ach-pesparawi-22-org": "Pesparawi Mahasiswa Nasional (Semarang, Jawa Tengah)",
+      "Medali Emas — Pesparawi Mahasiswa Nasional XVII 2022",
+    "ach-pesparawi-22-org":
+      "Pesparawi Mahasiswa Nasional — Semarang, Jawa Tengah",
     "ach-pesparawi-22-desc":
-      "Meraih Medali Emas dalam kejuaraan paduan suara nasional mewakili UBAYA.",
+      "Berkontribusi pada pencapaian Medali Emas Paduan Suara UBAYA pada kompetisi Pesparawi Mahasiswa Nasional ke-17.",
+    "ach-peksimida-title":
+      "Juara 3 — Vokal Grup (Dua Periode)",
+    "ach-peksimida-org":
+      "Pekan Seni Mahasiswa Daerah Jawa Timur (Peksimida Jawa Timur)",
+    "ach-peksimida-desc":
+      "Melatih dan membimbing anggota dalam persiapan kompetisi vokal, sekaligus mewakili Universitas Surabaya sebagai peserta kategori Solo Vokal Seriosa Putra. Turut berkontribusi dalam mempertahankan gelar Juara 3 Vokal Grup selama dua periode kompetisi (2022 dan 2024).",
     // Skills categories
-    "skill-backend": "Backend",
-    "skill-database": "Basis Data",
-    "skill-frontend": "Frontend",
-    "skill-tools": "Alat & Desain",
-    "skill-method": "Metodologi",
+    "skill-backend": "Pengembangan Backend",
+    "skill-database": "Manajemen Basis Data",
+    "skill-frontend": "Pengembangan Frontend",
+    "skill-tools": "Alat & Lingkungan Pengembangan",
+    "skill-method": "Analisis Sistem & Metodologi",
     "skill-soft": "Keahlian Interpersonal",
     // Skills items
-    "skill-db-design": "Desain Basis Data",
-    "skill-uiux": "Desain UI/UX",
-    "skill-excel": "Microsoft Excel",
-    "skill-analyst": "Analis Sistem",
-    "skill-flowchart": "Flowchart Sistem",
-    "skill-mapping": "Pemetaan Proses Bisnis",
-    "skill-saw": "Algoritma SAW",
-    "skill-problem": "Pemecahan Masalah",
-    "skill-thinking": "Berpikir Analitis",
+    "skill-php": "PHP",
+    "skill-laravel": "Laravel",
+    "skill-rest": "RESTful API",
+    "skill-oop": "Object-Oriented Programming (OOP)",
+    "skill-html": "HTML5",
+    "skill-css": "CSS3",
+    "skill-js": "JavaScript",
+    "skill-bootstrap": "Bootstrap",
+    "skill-mysql": "MySQL",
+    "skill-sql": "SQL",
+    "skill-rdb": "Desain Basis Data Relasional",
+    "skill-git": "Git & GitHub",
+    "skill-docker": "Docker",
+    "skill-vscode": "Visual Studio Code",
+    "skill-figma": "Figma",
+    "skill-xampp": "XAMPP",
+    "skill-laragon": "Laragon",
+    "skill-sa": "Analisis Sistem",
+    "skill-bpm": "Pemetaan Proses Bisnis",
+    "skill-bpmn": "BPMN 2.0",
+    "skill-sf": "Flowchart Sistem",
+    "skill-saw": "Simple Additive Weighting (SAW)",
+    "skill-sdlc": "Software Development Life Cycle (SDLC)",
+    "skill-at": "Berpikir Analitis",
+    "skill-ps": "Pemecahan Masalah",
     "skill-teamwork": "Kerja Sama Tim",
+    "skill-leadership": "Kepemimpinan",
     "skill-adapt": "Adaptabilitas",
+    // Certifications section
+    "cert-desc": "Sertifikasi profesional dan kursus yang telah diselesaikan sebagai bentuk pengembangan kompetensi di bidang pengembangan web, pemrograman, manajemen basis data, dan manajemen proyek.",
+    "cert-view-credential": "Lihat Sertifikat",
+    "cert-issued": "Diterbitkan",
+    "cert-expires": "Berlaku hingga",
+    "cert-cred-id": "Credential ID",
+    "cert-competencies": "Kompetensi",
+    // Certification 1 - Intermediate Assistant Web Developer
+    "cert-1-title": "Intermediate Assistant Web Developer",
+    "cert-1-issuer": "Digital Talent Scholarship",
+    "cert-1-date": "Oktober 2026",
+    "cert-1-id": "21211989840-2767",
+    "cert-1-desc": "Sertifikat penyelesaian resmi dari Digital Talent Academy (DTS 2026), Kementerian Komunikasi dan Digital.",
+    "cert-1-comp-1": "Menulis kode yang bersih sesuai pedoman dan praktik terbaik industri.",
+    "cert-1-comp-2": "Menerapkan konsep pemrograman terstruktur.",
+    "cert-1-comp-3": "Mengintegrasikan library yang sudah tersedia dan komponen perangkat lunak yang dapat digunakan kembali.",
+    // Certification 2 - JavaScript Essentials 1
+    "cert-2-title": "JavaScript Essentials 1",
+    "cert-2-issuer": "Cisco Networking Academy",
+    "cert-2-date": "Oktober 2026",
+    "cert-2-id": "40210294-edb0-473e-bcd2-5b40fcd89331",
+    "cert-2-desc": "Statement of Achievement resmi atas penyelesaian kursus JavaScript Essentials 1 yang diselenggarakan oleh Cisco Networking Academy bekerja sama dengan OpenEDG JavaScript Institute.",
+    "cert-2-comp-1": "Sintaks dan tipe data JavaScript.",
+    "cert-2-comp-2": "Alur kontrol dan fungsi.",
+    "cert-2-comp-3": "Penanganan exception.",
+    "cert-2-comp-4": "Teknik debugging dasar.",
+    // Certification 3 - Fundamental of Assistant Web Developer
+    "cert-3-title": "Fundamental of Assistant Web Developer",
+    "cert-3-issuer": "Digital Talent Scholarship",
+    "cert-3-date": "Oktober 2026",
+    "cert-3-id": "21211988840-9574",
+    "cert-3-desc": "Sertifikat penyelesaian resmi dari Digital Talent Academy (DTS 2026), Kementerian Komunikasi dan Digital.",
+    "cert-3-comp-1": "Implementasi antarmuka pengguna (UI).",
+    "cert-3-comp-2": "Penerapan perintah pemrograman untuk teks, grafis, dan multimedia.",
+    "cert-3-comp-3": "Penyusunan fungsi, file, dan sumber daya proyek secara efisien.",
+    // Certification 4 - Memulai Pemrograman dengan C
+    "cert-4-title": "Memulai Pemrograman dengan C",
+    "cert-4-issuer": "Dicoding Indonesia",
+    "cert-4-date": "September 2026",
+    "cert-4-expires": "September 2029",
+    "cert-4-id": "81P2K831QXOY",
+    "cert-4-desc": "Menyelesaikan kursus dasar pemrograman yang membahas bahasa pemrograman C dan konsep fundamental pemrograman.",
+    // Certification 5 - SQL Intermediate
+    "cert-5-title": "SQL Intermediate",
+    "cert-5-issuer": "Sololearn",
+    "cert-5-date": "September 2026",
+    "cert-5-id": "CC-AMDBE2B5",
+    "cert-5-desc": "Menyelesaikan kursus SQL tingkat menengah yang membahas konsep basis data relasional dan penggunaan query SQL.",
+    // Certification 6 - Belajar Dasar Manajemen Proyek
+    "cert-6-title": "Belajar Dasar Manajemen Proyek",
+    "cert-6-issuer": "Dicoding Indonesia",
+    "cert-6-date": "September 2026",
+    "cert-6-expires": "September 2029",
+    "cert-6-id": "4EXGJ990EXRL",
+    "cert-6-desc": "Menyelesaikan kursus dasar manajemen proyek yang membahas konsep dan praktik dasar dalam pengelolaan proyek.",
   },
 };
 
@@ -317,7 +508,7 @@ function renderProjectList(lang, container) {
                 .map(
                   (tech) => `
                 <span class="badge bg-primary-subtle text-primary border" style="font-size: 0.75rem">${tech}</span>
-              `
+              `,
                 )
                 .join("")}
             </div>
@@ -344,5 +535,45 @@ document.addEventListener("DOMContentLoaded", () => {
       const lang = e.target.getAttribute("data-lang");
       setLanguage(lang);
     }
+  });
+
+  // 1. Create Back to Top Button
+  const backToTopBtn = document.createElement("button");
+  backToTopBtn.id = "backToTopBtn";
+  backToTopBtn.innerHTML = '<i class="bi bi-arrow-up"></i>';
+  backToTopBtn.setAttribute("aria-label", "Back to top");
+  document.body.appendChild(backToTopBtn);
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      backToTopBtn.style.display = "flex";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  // 2. Scroll Reveal Animation using IntersectionObserver
+  const observerOptions = {
+    threshold: 0.05,
+    rootMargin: "0px 0px -30px 0px",
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Automatically add .reveal class to cards for smooth entrance
+  document.querySelectorAll(".card").forEach((el) => {
+    el.classList.add("reveal");
+    observer.observe(el);
   });
 });
