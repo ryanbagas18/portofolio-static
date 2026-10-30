@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/projects/:slug",
-      "destination": "/project-detail.html?id=:slug"
-    }
-  ]
-}
