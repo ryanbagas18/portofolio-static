@@ -484,40 +484,42 @@ function renderProjectList(lang, container) {
 
       return `
       <div class="col-md-6 col-lg-4">
-        <div class="card border-0 shadow-sm h-100 project-card">
-          <div class="ratio ratio-16x9">
-            <img
-              src="${project.thumbnail}"
-              class="img-fluid rounded w-100"
-              alt="${title}"
-              style="
-                object-fit: cover;
-                image-rendering: -webkit-optimize-contrast;
-                image-rendering: crisp-edges;
-              "
-            />
-          </div>
-          <div class="card-body d-flex flex-column p-4">
-            <h5 class="card-title fw-bold mb-1">${title}</h5>
-            <p class="text-muted small mb-2">${org} | ${role}</p>
-            <p class="card-text text-secondary mb-3 flex-grow-1">${desc}</p>
-
-            <div class="mb-3 d-flex flex-wrap gap-1">
-              ${project.techStack
-                .slice(0, 3)
-                .map(
-                  (tech) => `
-                <span class="badge bg-primary-subtle text-primary border" style="font-size: 0.75rem">${tech}</span>
-              `,
-                )
-                .join("")}
+        <a href="project-detail.html?id=${project.id}" class="text-decoration-none text-dark">
+          <div class="card border-0 shadow-sm h-100 project-card">
+            <div class="ratio ratio-16x9">
+              <img
+                src="${project.thumbnail}"
+                class="img-fluid rounded w-100"
+                alt="${title}"
+                style="
+                  object-fit: cover;
+                  image-rendering: -webkit-optimize-contrast;
+                  image-rendering: crisp-edges;
+                "
+              />
             </div>
+            <div class="card-body d-flex flex-column p-4">
+              <h5 class="card-title fw-bold mb-1">${title}</h5>
+              <p class="text-muted small mb-2">${org} | ${role}</p>
+              <p class="card-text text-secondary mb-3 flex-grow-1">${desc}</p>
 
-            <a href="project-detail.html?id=${project.id}" class="btn btn-outline-primary btn-sm mt-auto w-100">
-              ${btnText}<i class="bi bi-arrow-right ms-1"></i>
-            </a>
+              <div class="mb-3 d-flex flex-wrap gap-1">
+                ${project.techStack
+                  .slice(0, 3)
+                  .map(
+                    (tech) => `
+                  <span class="badge bg-primary-subtle text-primary border" style="font-size: 0.75rem">${tech}</span>
+                `,
+                  )
+                  .join("")}
+              </div>
+
+              <button class="btn btn-outline-primary btn-sm mt-auto w-100">
+                ${btnText}<i class="bi bi-arrow-right ms-1"></i>
+              </button>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     `;
     })

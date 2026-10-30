@@ -58,42 +58,42 @@ const projectsData = [
     },
     screenshots: [
       {
-        src: "assets/images/bobot-penilaian.png",
+        src: "assets/images/bobot-penilaian.webp",
         title: {
           en: "SAW Audition Scoring Form",
           id: "Formulir Penilaian Audisi SAW",
         },
       },
       {
-        src: "assets/images/form-penilaian.png",
+        src: "assets/images/form-penilaian.webp",
         title: {
           en: "Audition Evaluation Form",
           id: "Formulir Evaluasi Audisi",
         },
       },
       {
-        src: "assets/images/hasil-audisi.png",
+        src: "assets/images/hasil-audisi.webp",
         title: {
           en: "Audition Results Dashboard",
           id: "Dasbor Hasil Audisi",
         },
       },
       {
-        src: "assets/images/penugasan-kuis.png",
+        src: "assets/images/penugasan-kuis.webp",
         title: {
           en: "Adaptive Learning Quizzes",
           id: "Kuis Pembelajaran Adaptif",
         },
       },
       {
-        src: "assets/images/detail-latihan.png",
+        src: "assets/images/detail-latihan.webp",
         title: {
           en: "Detailed Learning Progress",
           id: "Detail Kemajuan Belajar",
         },
       },
       {
-        src: "assets/images/progres-materi.png",
+        src: "assets/images/progres-materi.webp",
         title: {
           en: "Material Progress Tracking",
           id: "Pelacakan Kemajuan Materi",
@@ -119,7 +119,7 @@ const projectsData = [
       en: "Full-Stack Developer (Personal Project)",
       id: "Full-Stack Developer (Proyek Pribadi)",
     },
-    thumbnail: "assets/images/book-log-thumbnail.png",
+    thumbnail: "assets/images/book-log-thumbnail.webp",
     description: {
       en: "A centralized, Dockerized full-stack web application built with Laravel to track book ownership, reading progress, and financial investment. Features API-driven metadata extraction from Google Books and Open Library, advanced analytics dashboard, and CSV export capabilities.",
       id: "Aplikasi web full-stack terpusat dan ter-Docker yang dibangun dengan Laravel untuk melacak kepemilikan buku, kemajuan membaca, dan investasi keuangan. Fitur ekstraksi metadata berbasis API dari Google Books dan Open Library, dasbor analitik canggih, dan kemampuan ekspor CSV.",
@@ -151,28 +151,28 @@ const projectsData = [
     },
     screenshots: [
       {
-        src: "assets/images/book-log-dashboard.png",
+        src: "assets/images/book-log-dashboard.webp",
         title: {
           en: "Dashboard Analytics",
           id: "Dasbor Analitik",
         },
       },
       {
-        src: "assets/images/book-log-collection.png",
+        src: "assets/images/book-log-collection.webp",
         title: {
           en: "Book Collection",
           id: "Koleksi Buku",
         },
       },
       {
-        src: "assets/images/book-log-api-search.png",
+        src: "assets/images/book-log-api-search.webp",
         title: {
           en: "API Search Form",
           id: "Formulir Pencarian API",
         },
       },
       // {
-      //   src: "assets/images/book-log-filter.png",
+      //   src: "assets/images/book-log-filter.webp",
       //   title: {
       //     en: "Advanced Filter",
       //     id: "Filter Canggih",
