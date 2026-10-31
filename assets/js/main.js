@@ -12,7 +12,7 @@ const staticTranslations = {
     "hero-title":
       "Full-Stack Web Developer | Informatics Engineering - Information Systems Graduate",
     "hero-desc":
-      "An Information Systems graduate (S.Kom.) from Universitas Surabaya with a focus on full-stack web development using Laravel and MySQL, as well as UI/UX design with Figma. Experienced in developing web-based Management Information Systems and applying system analysis to improve organizational workflows. Also brings leadership and team coordination experience through talent development initiatives and large-scale national and international events.",
+      "S1 Informatics Engineering (S.Kom.) – Information Systems Program graduate from Universitas Surabaya, with a focus on full-stack web development using Laravel and MySQL as well as UI/UX design using Figma. Experienced in designing and developing web-based Management Information Systems, with system analysis and problem-solving capabilities. Has leadership experience in developing team competencies for national and international competitions, as well as coordinating national-scale event operations.",
     "btn-download-cv": "Download CV",
     "btn-learn-more": "Learn More",
     "section-experience": "Experience",
@@ -45,7 +45,7 @@ const staticTranslations = {
     // About page
     "about-title": "About Me",
     "about-p1":
-      "   I am an Information Systems graduate from Universitas Surabaya (UBAYA), with a strong interest in full-stack web development, systems analysis, and business process improvement. My technical experience includes building web applications with Laravel, managing MySQL databases, and designing user interfaces through Figma.",
+      "   I am a graduate of Informatics Engineering - Information Systems Program from Universitas Surabaya (UBAYA), with a strong interest in full-stack web development, systems analysis, and business process improvement. My technical experience includes building web applications with Laravel, managing MySQL databases, and designing user interfaces through Figma.",
     "about-p2":
       "   Beyond technology, I have developed leadership and team management skills through organizational experiences. As a Trainer in the Training Division of UBAYA Choir, I contributed to member development and competition preparation, being part of a team that achieved 4 Gold Medals across national and international competitions. I also served as Steering Committee and Logistics Division Coordinator for FESPA UBAYA, gaining experience in cross-functional coordination and large-scale event management.",
     "about-p3":
@@ -103,10 +103,8 @@ const staticTranslations = {
       "National Student PESPARAWI — Semarang, Central Java",
     "ach-pesparawi-22-desc":
       "Contributed to UBAYA Choir's achievement of a Gold Medal at the 17th National Student PESPARAWI competition.",
-    "ach-peksimida-title":
-      "3rd Place — Vocal Group (Two Competition Periods)",
-    "ach-peksimida-org":
-      "East Java Student Arts Week (Peksimida Jawa Timur)",
+    "ach-peksimida-title": "3rd Place — Vocal Group (Two Competition Periods)",
+    "ach-peksimida-org": "East Java Student Arts Week (Peksimida Jawa Timur)",
     "ach-peksimida-desc":
       "Coached and mentored choir members in preparation for vocal competitions while representing Universitas Surabaya as a participant in the Men's Classical Solo Vocal category. Contributed to maintaining the 3rd Place Vocal Group title across two competition periods (2022 and 2024).",
     // Skills categories
@@ -146,7 +144,8 @@ const staticTranslations = {
     "skill-leadership": "Leadership",
     "skill-adapt": "Adaptability",
     // Certifications section
-    "cert-desc": "Professional certifications and completed courses that demonstrate my continuous learning and development in web development, programming, database management, and project management.",
+    "cert-desc":
+      "Professional certifications and completed courses that demonstrate my continuous learning and development in web development, programming, database management, and project management.",
     "cert-view-credential": "View Credential",
     "cert-issued": "Issued",
     "cert-expires": "Expires",
@@ -157,16 +156,20 @@ const staticTranslations = {
     "cert-1-issuer": "Digital Talent Scholarship",
     "cert-1-date": "October 2026",
     "cert-1-id": "21211989840-2767",
-    "cert-1-desc": "Official Certificate of Completion issued by Digital Talent Academy (DTS 2026), Ministry of Communication and Digital.",
-    "cert-1-comp-1": "Writing clean code following industry guidelines and best practices.",
+    "cert-1-desc":
+      "Official Certificate of Completion issued by Digital Talent Academy (DTS 2026), Ministry of Communication and Digital.",
+    "cert-1-comp-1":
+      "Writing clean code following industry guidelines and best practices.",
     "cert-1-comp-2": "Implementing structured programming concepts.",
-    "cert-1-comp-3": "Integrating pre-existing libraries and reusable software components.",
+    "cert-1-comp-3":
+      "Integrating pre-existing libraries and reusable software components.",
     // Certification 2 - JavaScript Essentials 1
     "cert-2-title": "JavaScript Essentials 1",
     "cert-2-issuer": "Cisco Networking Academy",
     "cert-2-date": "October 2026",
     "cert-2-id": "40210294-edb0-473e-bcd2-5b40fcd89331",
-    "cert-2-desc": "Official Statement of Achievement for completing the JavaScript Essentials 1 course, provided by Cisco Networking Academy in collaboration with OpenEDG JavaScript Institute.",
+    "cert-2-desc":
+      "Official Statement of Achievement for completing the JavaScript Essentials 1 course, provided by Cisco Networking Academy in collaboration with OpenEDG JavaScript Institute.",
     "cert-2-comp-1": "JavaScript syntax and data types.",
     "cert-2-comp-2": "Control flow and functions.",
     "cert-2-comp-3": "Exception handling.",
@@ -176,30 +179,38 @@ const staticTranslations = {
     "cert-3-issuer": "Digital Talent Scholarship",
     "cert-3-date": "October 2026",
     "cert-3-id": "21211988840-9574",
-    "cert-3-desc": "Official Certificate of Completion issued by Digital Talent Academy (DTS 2026), Ministry of Communication and Digital.",
+    "cert-3-desc":
+      "Official Certificate of Completion issued by Digital Talent Academy (DTS 2026), Ministry of Communication and Digital.",
     "cert-3-comp-1": "User interface (UI) implementation.",
-    "cert-3-comp-2": "Executing text, graphics, and multimedia programming commands.",
-    "cert-3-comp-3": "Structuring functions, files, and project resources efficiently.",
+    "cert-3-comp-2":
+      "Executing text, graphics, and multimedia programming commands.",
+    "cert-3-comp-3":
+      "Structuring functions, files, and project resources efficiently.",
     // Certification 4 - Memulai Pemrograman dengan C
-    "cert-4-title": "Getting Started with C Programming (Memulai Pemrograman dengan C)",
+    "cert-4-title":
+      "Getting Started with C Programming (Memulai Pemrograman dengan C)",
     "cert-4-issuer": "Dicoding Indonesia",
     "cert-4-date": "September 2026",
     "cert-4-expires": "September 2029",
     "cert-4-id": "81P2K831QXOY",
-    "cert-4-desc": "Completed a foundational programming course covering the C programming language and programming fundamentals.",
+    "cert-4-desc":
+      "Completed a foundational programming course covering the C programming language and programming fundamentals.",
     // Certification 5 - SQL Intermediate
     "cert-5-title": "SQL Intermediate",
     "cert-5-issuer": "Sololearn",
     "cert-5-date": "September 2026",
     "cert-5-id": "CC-AMDBE2B5",
-    "cert-5-desc": "Completed an intermediate SQL course covering relational database concepts and SQL querying.",
+    "cert-5-desc":
+      "Completed an intermediate SQL course covering relational database concepts and SQL querying.",
     // Certification 6 - Belajar Dasar Manajemen Proyek
-    "cert-6-title": "Project Management Basics (Belajar Dasar Manajemen Proyek)",
+    "cert-6-title":
+      "Project Management Basics (Belajar Dasar Manajemen Proyek)",
     "cert-6-issuer": "Dicoding Indonesia",
     "cert-6-date": "September 2026",
     "cert-6-expires": "September 2029",
     "cert-6-id": "4EXGJ990EXRL",
-    "cert-6-desc": "Completed a foundational course in project management, covering basic project management concepts and practices.",
+    "cert-6-desc":
+      "Completed a foundational course in project management, covering basic project management concepts and practices.",
   },
   id: {
     "nav-home": "Beranda",
@@ -214,7 +225,7 @@ const staticTranslations = {
     "hero-title":
       "Full-Stack Web Developer | Lulusan Teknik Informatika - Sistem Informasi",
     "hero-desc":
-      "Lulusan Sistem Informasi (S.Kom.) dari Universitas Surabaya dengan fokus pada pengembangan web full-stack menggunakan Laravel dan MySQL, serta desain UI/UX dengan Figma. Berpengalaman dalam mengembangkan Sistem Informasi Manajemen berbasis web dan menerapkan analisis sistem untuk meningkatkan alur kerja organisasi. Juga membawa pengalaman kepemimpinan dan koordinasi tim melalui inisiatif pengembangan bakat dan acara berskala nasional dan internasional.",
+      "Lulusan S1 Teknik Informatika (S.Kom.) – Program Sistem Informasi, Universitas Surabaya, dengan fokus pada pengembangan web full-stack menggunakan Laravel dan MySQL serta perancangan UI/UX menggunakan Figma. Berpengalaman merancang dan mengembangkan Sistem Informasi Manajemen berbasis web, dengan kemampuan analisis sistem dan pemecahan masalah. Memiliki pengalaman kepemimpinan dalam mengembangkan kompetensi tim untuk kompetisi nasional dan internasional, serta mengoordinasikan operasional acara berskala nasional.",
     "btn-download-cv": "Unduh CV",
     "btn-learn-more": "Pelajari Lebih Lanjut",
     "section-experience": "Pengalaman",
@@ -247,7 +258,7 @@ const staticTranslations = {
     // About page
     "about-title": "Tentang Saya",
     "about-p1":
-      "   Saya adalah lulusan Sistem Informasi dari Universitas Surabaya (UBAYA), dengan ketertarikan kuat pada pengembangan web full-stack, analisis sistem, dan peningkatan proses bisnis. Pengalaman teknis saya meliputi membangun aplikasi web dengan Laravel, mengelola database MySQL, dan merancang antarmuka pengguna melalui Figma.",
+      "   Saya adalah lulusan Teknik informatika - Program Sistem Informasi dari Universitas Surabaya (UBAYA), dengan ketertarikan kuat pada pengembangan web full-stack, analisis sistem, dan peningkatan proses bisnis. Pengalaman teknis saya meliputi membangun aplikasi web dengan Laravel, mengelola database MySQL, dan merancang antarmuka pengguna melalui Figma.",
     "about-p2":
       "   Di luar teknologi, saya telah mengembangkan kemampuan kepemimpinan dan manajemen tim melalui pengalaman organisasi. Sebagai Pelatih di Divisi Pelatihan UBAYA Choir, saya berkontribusi pada pengembangan anggota dan persiapan kompetisi, menjadi bagian dari tim yang meraih 4 Medali Emas di kompetisi nasional dan internasional. Saya juga pernah menjabat sebagai Steering Committee dan Koordinator Divisi Logistik FESPA UBAYA, mendapatkan pengalaman dalam koordinasi lintas fungsi dan manajemen acara berskala besar.",
     "about-p3":
@@ -304,8 +315,7 @@ const staticTranslations = {
       "Pesparawi Mahasiswa Nasional — Semarang, Jawa Tengah",
     "ach-pesparawi-22-desc":
       "Berkontribusi pada pencapaian Medali Emas Paduan Suara UBAYA pada kompetisi Pesparawi Mahasiswa Nasional ke-17.",
-    "ach-peksimida-title":
-      "Juara 3 — Vokal Grup (Dua Periode)",
+    "ach-peksimida-title": "Juara 3 — Vokal Grup (Dua Periode)",
     "ach-peksimida-org":
       "Pekan Seni Mahasiswa Daerah Jawa Timur (Peksimida Jawa Timur)",
     "ach-peksimida-desc":
@@ -347,7 +357,8 @@ const staticTranslations = {
     "skill-leadership": "Kepemimpinan",
     "skill-adapt": "Adaptabilitas",
     // Certifications section
-    "cert-desc": "Sertifikasi profesional dan kursus yang telah diselesaikan sebagai bentuk pengembangan kompetensi di bidang pengembangan web, pemrograman, manajemen basis data, dan manajemen proyek.",
+    "cert-desc":
+      "Sertifikasi profesional dan kursus yang telah diselesaikan sebagai bentuk pengembangan kompetensi di bidang pengembangan web, pemrograman, manajemen basis data, dan manajemen proyek.",
     "cert-view-credential": "Lihat Sertifikat",
     "cert-issued": "Diterbitkan",
     "cert-expires": "Berlaku hingga",
@@ -358,16 +369,20 @@ const staticTranslations = {
     "cert-1-issuer": "Digital Talent Scholarship",
     "cert-1-date": "Oktober 2026",
     "cert-1-id": "21211989840-2767",
-    "cert-1-desc": "Sertifikat penyelesaian resmi dari Digital Talent Academy (DTS 2026), Kementerian Komunikasi dan Digital.",
-    "cert-1-comp-1": "Menulis kode yang bersih sesuai pedoman dan praktik terbaik industri.",
+    "cert-1-desc":
+      "Sertifikat penyelesaian resmi dari Digital Talent Academy (DTS 2026), Kementerian Komunikasi dan Digital.",
+    "cert-1-comp-1":
+      "Menulis kode yang bersih sesuai pedoman dan praktik terbaik industri.",
     "cert-1-comp-2": "Menerapkan konsep pemrograman terstruktur.",
-    "cert-1-comp-3": "Mengintegrasikan library yang sudah tersedia dan komponen perangkat lunak yang dapat digunakan kembali.",
+    "cert-1-comp-3":
+      "Mengintegrasikan library yang sudah tersedia dan komponen perangkat lunak yang dapat digunakan kembali.",
     // Certification 2 - JavaScript Essentials 1
     "cert-2-title": "JavaScript Essentials 1",
     "cert-2-issuer": "Cisco Networking Academy",
     "cert-2-date": "Oktober 2026",
     "cert-2-id": "40210294-edb0-473e-bcd2-5b40fcd89331",
-    "cert-2-desc": "Statement of Achievement resmi atas penyelesaian kursus JavaScript Essentials 1 yang diselenggarakan oleh Cisco Networking Academy bekerja sama dengan OpenEDG JavaScript Institute.",
+    "cert-2-desc":
+      "Statement of Achievement resmi atas penyelesaian kursus JavaScript Essentials 1 yang diselenggarakan oleh Cisco Networking Academy bekerja sama dengan OpenEDG JavaScript Institute.",
     "cert-2-comp-1": "Sintaks dan tipe data JavaScript.",
     "cert-2-comp-2": "Alur kontrol dan fungsi.",
     "cert-2-comp-3": "Penanganan exception.",
@@ -377,30 +392,36 @@ const staticTranslations = {
     "cert-3-issuer": "Digital Talent Scholarship",
     "cert-3-date": "Oktober 2026",
     "cert-3-id": "21211988840-9574",
-    "cert-3-desc": "Sertifikat penyelesaian resmi dari Digital Talent Academy (DTS 2026), Kementerian Komunikasi dan Digital.",
+    "cert-3-desc":
+      "Sertifikat penyelesaian resmi dari Digital Talent Academy (DTS 2026), Kementerian Komunikasi dan Digital.",
     "cert-3-comp-1": "Implementasi antarmuka pengguna (UI).",
-    "cert-3-comp-2": "Penerapan perintah pemrograman untuk teks, grafis, dan multimedia.",
-    "cert-3-comp-3": "Penyusunan fungsi, file, dan sumber daya proyek secara efisien.",
+    "cert-3-comp-2":
+      "Penerapan perintah pemrograman untuk teks, grafis, dan multimedia.",
+    "cert-3-comp-3":
+      "Penyusunan fungsi, file, dan sumber daya proyek secara efisien.",
     // Certification 4 - Memulai Pemrograman dengan C
     "cert-4-title": "Memulai Pemrograman dengan C",
     "cert-4-issuer": "Dicoding Indonesia",
     "cert-4-date": "September 2026",
     "cert-4-expires": "September 2029",
     "cert-4-id": "81P2K831QXOY",
-    "cert-4-desc": "Menyelesaikan kursus dasar pemrograman yang membahas bahasa pemrograman C dan konsep fundamental pemrograman.",
+    "cert-4-desc":
+      "Menyelesaikan kursus dasar pemrograman yang membahas bahasa pemrograman C dan konsep fundamental pemrograman.",
     // Certification 5 - SQL Intermediate
     "cert-5-title": "SQL Intermediate",
     "cert-5-issuer": "Sololearn",
     "cert-5-date": "September 2026",
     "cert-5-id": "CC-AMDBE2B5",
-    "cert-5-desc": "Menyelesaikan kursus SQL tingkat menengah yang membahas konsep basis data relasional dan penggunaan query SQL.",
+    "cert-5-desc":
+      "Menyelesaikan kursus SQL tingkat menengah yang membahas konsep basis data relasional dan penggunaan query SQL.",
     // Certification 6 - Belajar Dasar Manajemen Proyek
     "cert-6-title": "Belajar Dasar Manajemen Proyek",
     "cert-6-issuer": "Dicoding Indonesia",
     "cert-6-date": "September 2026",
     "cert-6-expires": "September 2029",
     "cert-6-id": "4EXGJ990EXRL",
-    "cert-6-desc": "Menyelesaikan kursus dasar manajemen proyek yang membahas konsep dan praktik dasar dalam pengelolaan proyek.",
+    "cert-6-desc":
+      "Menyelesaikan kursus dasar manajemen proyek yang membahas konsep dan praktik dasar dalam pengelolaan proyek.",
   },
 };
 
